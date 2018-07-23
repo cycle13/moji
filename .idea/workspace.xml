@@ -1,0 +1,1715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="af243767-e9fa-4782-aa27-34a368fa7b17" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive_dem2.py" afterPath="$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive_dem2.py" />
+      <change beforePath="$PROJECT_DIR$/cimissJson/henantraffic_live.py" afterPath="$PROJECT_DIR$/cimissJson/henantraffic_live.py" />
+      <change beforePath="$PROJECT_DIR$/client/grib1.grib" afterPath="" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/moji$multilogging.coverage" NAME="multilogging Coverage Results" MODIFIED="1521604604004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboost_new_temp.coverage" NAME="ecxgboost_new_temp Coverage Results" MODIFIED="1525332844104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboostlive" />
+    <SUITE FILE_PATH="coverage/moji$ApiRequest.coverage" NAME="ApiRequest Coverage Results" MODIFIED="1516182095784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cimissJson" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboostlive_dem.coverage" NAME="ecxgboostlive_dem Coverage Results" MODIFIED="1531120439774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboostlive" />
+    <SUITE FILE_PATH="coverage/moji$ReadmysqlPRE6h_linux.coverage" NAME="ReadmysqlPRE6h_linux Coverage Results" MODIFIED="1521903292645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/dataprocess" />
+    <SUITE FILE_PATH="coverage/moji$getcldasdata_threading.coverage" NAME="getcldasdata_threading Coverage Results" MODIFIED="1526350133403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cimissJson" />
+    <SUITE FILE_PATH="coverage/moji$lighting.coverage" NAME="lighting Coverage Results" MODIFIED="1529030537836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cimissJson" />
+    <SUITE FILE_PATH="coverage/moji$snowprs.coverage" NAME="snowprs Coverage Results" MODIFIED="1526556912449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OlympicWinterGames" />
+    <SUITE FILE_PATH="coverage/moji$img2nc.coverage" NAME="img2nc Coverage Results" MODIFIED="1518167492779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$testmulti.coverage" NAME="testmulti Coverage Results" MODIFIED="1520420467143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$invdisttree.coverage" NAME="invdisttree Coverage Results" MODIFIED="1526897434820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/moji$xgboost_pre.coverage" NAME="xgboost_pre Coverage Results" MODIFIED="1520391099634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$interpolation.coverage" NAME="interpolation Coverage Results" MODIFIED="1521450802027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jigao" />
+    <SUITE FILE_PATH="coverage/moji$testbz2.coverage" NAME="testbz2 Coverage Results" MODIFIED="1525665002926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$learningtest.coverage" NAME="learningtest Coverage Results" MODIFIED="1516937773689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS" />
+    <SUITE FILE_PATH="coverage/moji$tasks__1_.coverage" NAME="tasks (1) Coverage Results" MODIFIED="1527494171581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$deletecldas.coverage" NAME="deletecldas Coverage Results" MODIFIED="1530670201564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cimissJson" />
+    <SUITE FILE_PATH="coverage/moji$getcldasdata.coverage" NAME="getcldasdata Coverage Results" MODIFIED="1527730162506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cimissJson" />
+    <SUITE FILE_PATH="coverage/moji$MOSGBDT.coverage" NAME="MOSGBDT Coverage Results" MODIFIED="1517382067133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/scikitLearning" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboost_temphistory.coverage" NAME="ecxgboost_temphistory Coverage Results" MODIFIED="1525234845896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboostlive" />
+    <SUITE FILE_PATH="coverage/moji$multitest.coverage" NAME="multitest Coverage Results" MODIFIED="1520495016353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$city14.coverage" NAME="city14 Coverage Results" MODIFIED="1515478776355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cimissJson" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboost_maxtem6h_dem222.coverage" NAME="ecxgboost_maxtem6h_dem222 Coverage Results" MODIFIED="1531895088121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboost_linuxboost.coverage" NAME="ecxgboost_linuxboost Coverage Results" MODIFIED="1518418490800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$multimanagerECinterplote4_.coverage" NAME="multimanagerECinterplote4_ Coverage Results" MODIFIED="1521530157431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/multixgboost" />
+    <SUITE FILE_PATH="coverage/moji$Readjson.coverage" NAME="Readjson Coverage Results" MODIFIED="1521100741440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cimissJson" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboost_maxtem6h_dem.coverage" NAME="ecxgboost_maxtem6h_dem Coverage Results" MODIFIED="1530844827871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$daylyaccuracy.coverage" NAME="daylyaccuracy Coverage Results" MODIFIED="1521190741115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$ReadmysqlPRE.coverage" NAME="ReadmysqlPRE Coverage Results" MODIFIED="1519270738781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/moji$celerytest.coverage" NAME="celerytest Coverage Results" MODIFIED="1527149166835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$Readmysql.coverage" NAME="Readmysql Coverage Results" MODIFIED="1517989141578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/moji$henan_lightingwindrain.coverage" NAME="henan_lightingwindrain Coverage Results" MODIFIED="1526969178409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cimissJson" />
+    <SUITE FILE_PATH="coverage/moji$dailyrain.coverage" NAME="dailyrain Coverage Results" MODIFIED="1525243849970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OlympicWinterGames" />
+    <SUITE FILE_PATH="coverage/moji$henantraffic_live.coverage" NAME="henantraffic_live Coverage Results" MODIFIED="1528354472001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cimissJson" />
+    <SUITE FILE_PATH="coverage/moji$traintestsplit.coverage" NAME="traintestsplit Coverage Results" MODIFIED="1518156267318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$allyearportabelprocess.coverage" NAME="allyearportabelprocess Coverage Results" MODIFIED="1524626853951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OlympicWinterGames" />
+    <SUITE FILE_PATH="coverage/moji$getcldas625data_multiprocess.coverage" NAME="getcldas625data_multiprocess Coverage Results" MODIFIED="1528082073223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cimissJson" />
+    <SUITE FILE_PATH="coverage/moji$tempTomaxmin.coverage" NAME="tempTomaxmin Coverage Results" MODIFIED="1515516190805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cimissJson" />
+    <SUITE FILE_PATH="coverage/moji$shpfiletext.coverage" NAME="shpfiletext Coverage Results" MODIFIED="1516177383281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cimissJson" />
+    <SUITE FILE_PATH="coverage/moji$multithreading.coverage" NAME="multithreading Coverage Results" MODIFIED="1525320619758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$ReadmysqlPRE6h.coverage" NAME="ReadmysqlPRE6h Coverage Results" MODIFIED="1521897733410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/dataprocess" />
+    <SUITE FILE_PATH="coverage/moji$multimanagerEC4point.coverage" NAME="multimanagerEC4point Coverage Results" MODIFIED="1521206000832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/multixgboost" />
+    <SUITE FILE_PATH="coverage/moji$gradientboosting.coverage" NAME="gradientboosting Coverage Results" MODIFIED="1517194899241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/scikitLearning" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboostlive_dem2.coverage" NAME="ecxgboostlive_dem2 Coverage Results" MODIFIED="1531895074303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboostlive" />
+    <SUITE FILE_PATH="coverage/moji$yanqingJfile.coverage" NAME="yanqingJfile Coverage Results" MODIFIED="1526283662099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OlympicWinterGames" />
+    <SUITE FILE_PATH="coverage/moji$xgboost_gui1.coverage" NAME="xgboost_gui1 Coverage Results" MODIFIED="1518252648230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$yanqing30.coverage" NAME="yanqing30 Coverage Results" MODIFIED="1524550251655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OlympicWinterGames" />
+    <SUITE FILE_PATH="coverage/moji$maxminavg24Tomysql.coverage" NAME="maxminavg24Tomysql Coverage Results" MODIFIED="1521262283248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/dataprocess" />
+    <SUITE FILE_PATH="coverage/moji$xgboost_maxtemp.coverage" NAME="xgboost_maxtemp Coverage Results" MODIFIED="1528785845148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboostlive" />
+    <SUITE FILE_PATH="coverage/moji$parameterGBM.coverage" NAME="parameterGBM Coverage Results" MODIFIED="1516949263497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS" />
+    <SUITE FILE_PATH="coverage/moji$run_tasks.coverage" NAME="run_tasks Coverage Results" MODIFIED="1527156088637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/test_celery" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboost_Interplote4.coverage" NAME="ecxgboost_Interplote4 Coverage Results" MODIFIED="1521776101958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$mpi4pytest.coverage" NAME="mpi4pytest Coverage Results" MODIFIED="1522303763249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$testECtime.coverage" NAME="testECtime Coverage Results" MODIFIED="1525232941424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$resample.coverage" NAME="resample Coverage Results" MODIFIED="1523329363205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$Readmysql_linux.coverage" NAME="Readmysql_linux Coverage Results" MODIFIED="1517989936146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/moji$bz2fileTogrib.coverage" NAME="bz2fileTogrib Coverage Results" MODIFIED="1525610817814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboostlive" />
+    <SUITE FILE_PATH="coverage/moji$mullist.coverage" NAME="mullist Coverage Results" MODIFIED="1517451442949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$xgboostlive_temp.coverage" NAME="xgboostlive_temp Coverage Results" MODIFIED="1528966108852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboostlive" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboost_templearning.coverage" NAME="ecxgboost_templearning Coverage Results" MODIFIED="1524137389090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$celery__1_.coverage" NAME="celery (1) Coverage Results" MODIFIED="1527227150281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/proj" />
+    <SUITE FILE_PATH="coverage/moji$kafkatest.coverage" NAME="kafkatest Coverage Results" MODIFIED="1516701354919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kafka" />
+    <SUITE FILE_PATH="coverage/moji$station2015.coverage" NAME="station2015 Coverage Results" MODIFIED="1517999190563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/realdata" />
+    <SUITE FILE_PATH="coverage/moji$scaletest.coverage" NAME="scaletest Coverage Results" MODIFIED="1525407860363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$xgboostaaa.coverage" NAME="xgboostaaa Coverage Results" MODIFIED="1517968018983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$moscelery.coverage" NAME="moscelery Coverage Results" MODIFIED="1528104246921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboostlive/mos_live" />
+    <SUITE FILE_PATH="coverage/moji$ReadGriblive.coverage" NAME="ReadGriblive Coverage Results" MODIFIED="1524901492002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS" />
+    <SUITE FILE_PATH="coverage/moji$protableStationsToMysql.coverage" NAME="protableStationsToMysql Coverage Results" MODIFIED="1525242822257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OlympicWinterGames" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboost_temp_optimalize.coverage" NAME="ecxgboost_temp_optimalize Coverage Results" MODIFIED="1525331334321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboostlive" />
+    <SUITE FILE_PATH="coverage/moji$cldasdatabak.coverage" NAME="cldasdatabak Coverage Results" MODIFIED="1527471897743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cimissJson" />
+    <SUITE FILE_PATH="coverage/moji$maxminavgtemp.coverage" NAME="maxminavgtemp Coverage Results" MODIFIED="1521268784859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/dataprocess" />
+    <SUITE FILE_PATH="coverage/moji$Readgrib.coverage" NAME="Readgrib Coverage Results" MODIFIED="1517293285527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS" />
+    <SUITE FILE_PATH="coverage/moji$pycudatest.coverage" NAME="pycudatest Coverage Results" MODIFIED="1517277388833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gpu" />
+    <SUITE FILE_PATH="coverage/moji$LUMING.coverage" NAME="LUMING Coverage Results" MODIFIED="1518142062329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$Readmysqlmaxmintemp3h.coverage" NAME="Readmysqlmaxmintemp3h Coverage Results" MODIFIED="1522305757163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/dataprocess" />
+    <SUITE FILE_PATH="coverage/moji$maxwsyear.coverage" NAME="maxwsyear Coverage Results" MODIFIED="1526554815693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OlympicWinterGames" />
+    <SUITE FILE_PATH="coverage/moji$testmpi.coverage" NAME="testmpi Coverage Results" MODIFIED="1521779835263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$eclearning_multi.coverage" NAME="eclearning_multi Coverage Results" MODIFIED="1520490875263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboost_temperatureAll.coverage" NAME="ecxgboost_temperatureAll Coverage Results" MODIFIED="1525664195708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboostlive" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboost_yuzhi.coverage" NAME="ecxgboost_yuzhi Coverage Results" MODIFIED="1522662383460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$ECdataprocess.coverage" NAME="ECdataprocess Coverage Results" MODIFIED="1531906626368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboost_maxmintemp.coverage" NAME="ecxgboost_maxmintemp Coverage Results" MODIFIED="1525486847992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$Readmysqlmaxmintemp6h.coverage" NAME="Readmysqlmaxmintemp6h Coverage Results" MODIFIED="1522305650626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/dataprocess" />
+    <SUITE FILE_PATH="coverage/moji$cldasfileprocess.coverage" NAME="cldasfileprocess Coverage Results" MODIFIED="1526632200108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cimissJson" />
+    <SUITE FILE_PATH="coverage/moji$maxmintemp24h.coverage" NAME="maxmintemp24h Coverage Results" MODIFIED="1521194087938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/dataprocess" />
+    <SUITE FILE_PATH="coverage/moji$mpi4pytest1.coverage" NAME="mpi4pytest1 Coverage Results" MODIFIED="1523950224201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$ReadmysqlPRE_linux.coverage" NAME="ReadmysqlPRE_linux Coverage Results" MODIFIED="1514865880686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboostlivedem.coverage" NAME="ecxgboostlivedem Coverage Results" MODIFIED="1531103269819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboostlive" />
+    <SUITE FILE_PATH="coverage/moji$gbtd_regression.coverage" NAME="gbtd_regression Coverage Results" MODIFIED="1517218472182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/scikitLearning" />
+    <SUITE FILE_PATH="coverage/moji$demProcessing.coverage" NAME="demProcessing Coverage Results" MODIFIED="1524050694825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/dataprocess" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboost_maxmintemp6h.coverage" NAME="ecxgboost_maxmintemp6h Coverage Results" MODIFIED="1530775450369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboost20180223.coverage" NAME="ecxgboost20180223 Coverage Results" MODIFIED="1519358453383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$testNormalization.coverage" NAME="testNormalization Coverage Results" MODIFIED="1518074149143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$eclearning_plus.coverage" NAME="eclearning_plus Coverage Results" MODIFIED="1527671291602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$gradientBoostingregression.coverage" NAME="gradientBoostingregression Coverage Results" MODIFIED="1517219956439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/scikitLearning" />
+    <SUITE FILE_PATH="coverage/moji$jiliangStation.coverage" NAME="jiliangStation Coverage Results" MODIFIED="1516325924993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cimissJson" />
+    <SUITE FILE_PATH="coverage/moji$idw.coverage" NAME="idw Coverage Results" MODIFIED="1526887176379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$multiprocessing.coverage" NAME="multiprocessing Coverage Results" MODIFIED="1520319509960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$getcldasdata_multiprocess.coverage" NAME="getcldasdata_multiprocess Coverage Results" MODIFIED="1527584028666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cimissJson" />
+    <SUITE FILE_PATH="coverage/moji$xgboostEC.coverage" NAME="xgboostEC Coverage Results" MODIFIED="1517398593705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS" />
+    <SUITE FILE_PATH="coverage/moji$eclearning.coverage" NAME="eclearning Coverage Results" MODIFIED="1525428729959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$henan_live.coverage" NAME="henan_live Coverage Results" MODIFIED="1527487819016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cimissJson" />
+    <SUITE FILE_PATH="coverage/moji$numpyqiepian.coverage" NAME="numpyqiepian Coverage Results" MODIFIED="1527643585803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboost_raintest.coverage" NAME="ecxgboost_raintest Coverage Results" MODIFIED="1530173548069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$xgboostlive.coverage" NAME="xgboostlive Coverage Results" MODIFIED="1523341485125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboostlive" />
+    <SUITE FILE_PATH="coverage/moji$cldasdata.coverage" NAME="cldasdata Coverage Results" MODIFIED="1527471708012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cimissJson" />
+    <SUITE FILE_PATH="coverage/moji$demstation16.coverage" NAME="demstation16 Coverage Results" MODIFIED="1531115914103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboostlive" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboost.coverage" NAME="ecxgboost Coverage Results" MODIFIED="1518252651121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$daylyaccuracy__1_.coverage" NAME="daylyaccuracy (1) Coverage Results" MODIFIED="1521270531318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/dataprocess" />
+    <SUITE FILE_PATH="coverage/moji$ReadEC65timesOnetime.coverage" NAME="ReadEC65timesOnetime Coverage Results" MODIFIED="1518495582298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$multi_ecprocess.coverage" NAME="multi_ecprocess Coverage Results" MODIFIED="1520487842541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$oss_download.coverage" NAME="oss_download Coverage Results" MODIFIED="1516086689896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboostlive3.coverage" NAME="ecxgboostlive3 Coverage Results" MODIFIED="1531137908241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboostlive" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboost_maxmint.coverage" NAME="ecxgboost_maxmint Coverage Results" MODIFIED="1525675279263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboostlive" />
+    <SUITE FILE_PATH="coverage/moji$xgboost_prebak.coverage" NAME="xgboost_prebak Coverage Results" MODIFIED="1520391174925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$pygribtest.coverage" NAME="pygribtest Coverage Results" MODIFIED="1531128032575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboost_traintestnum.coverage" NAME="ecxgboost_traintestnum Coverage Results" MODIFIED="1526081827130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$multimanagerEC.coverage" NAME="multimanagerEC Coverage Results" MODIFIED="1520584480150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$ecmulti_test.coverage" NAME="ecmulti_test Coverage Results" MODIFIED="1520497442272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$ReadmysqlPRE3h_new.coverage" NAME="ReadmysqlPRE3h_new Coverage Results" MODIFIED="1521877199865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/dataprocess" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboost_t.coverage" NAME="ecxgboost_t Coverage Results" MODIFIED="1525833357321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboostlive" />
+    <SUITE FILE_PATH="coverage/moji$mapboxNC.coverage" NAME="mapboxNC Coverage Results" MODIFIED="1517819665132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/client" />
+    <SUITE FILE_PATH="coverage/moji$testfloatint.coverage" NAME="testfloatint Coverage Results" MODIFIED="1522034394443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$Hourly_6Ele_qcTomysql.coverage" NAME="Hourly_6Ele_qcTomysql Coverage Results" MODIFIED="1523183698649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OlympicWinterGames" />
+    <SUITE FILE_PATH="coverage/moji$yieldtest.coverage" NAME="yieldtest Coverage Results" MODIFIED="1516154055740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/moji$ReadmysqlPRE6h_new.coverage" NAME="ReadmysqlPRE6h_new Coverage Results" MODIFIED="1523004891587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/dataprocess" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboost_maxmintemp6h_dem.coverage" NAME="ecxgboost_maxmintemp6h_dem Coverage Results" MODIFIED="1524469560587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$test_ec.coverage" NAME="test_ec Coverage Results" MODIFIED="1521082066300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/dataprocess" />
+    <SUITE FILE_PATH="coverage/moji$perday4timesTomysql.coverage" NAME="perday4timesTomysql Coverage Results" MODIFIED="1526553999116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OlympicWinterGames" />
+    <SUITE FILE_PATH="coverage/moji$snowprsprocess.coverage" NAME="snowprsprocess Coverage Results" MODIFIED="1526558978754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OlympicWinterGames" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboost_temp.coverage" NAME="ecxgboost_temp Coverage Results" MODIFIED="1524737981222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboostlive" />
+    <SUITE FILE_PATH="coverage/moji$test.coverage" NAME="test Coverage Results" MODIFIED="1517571500717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/client" />
+    <SUITE FILE_PATH="coverage/moji$sail.coverage" NAME="sail Coverage Results" MODIFIED="1515752428337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cimissJson" />
+    <SUITE FILE_PATH="coverage/moji$xgboosttest.coverage" NAME="xgboosttest Coverage Results" MODIFIED="1517966278636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboost_rainmultifeature.coverage" NAME="ecxgboost_rainmultifeature Coverage Results" MODIFIED="1523242511753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$jsonTomysql.coverage" NAME="jsonTomysql Coverage Results" MODIFIED="1521103039360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cimissJson" />
+    <SUITE FILE_PATH="coverage/moji$pig.coverage" NAME="pig Coverage Results" MODIFIED="1515482035611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cimissJson" />
+    <SUITE FILE_PATH="coverage/moji$multiprocetst.coverage" NAME="multiprocetst Coverage Results" MODIFIED="1520320954515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$mostasks.coverage" NAME="mostasks Coverage Results" MODIFIED="1528102924148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboostlive/mos_live" />
+    <SUITE FILE_PATH="coverage/moji$tasks.coverage" NAME="tasks Coverage Results" MODIFIED="1527227594789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/proj" />
+    <SUITE FILE_PATH="coverage/moji$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1531897188185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$minuteData.coverage" NAME="minuteData Coverage Results" MODIFIED="1526615044763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cimissJson" />
+    <SUITE FILE_PATH="coverage/moji$getcldasdatabak.coverage" NAME="getcldasdatabak Coverage Results" MODIFIED="1527480645919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cimissJson" />
+    <SUITE FILE_PATH="coverage/moji$multiDownload.coverage" NAME="multiDownload Coverage Results" MODIFIED="1516335774013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS" />
+    <SUITE FILE_PATH="coverage/moji$GribToNC.coverage" NAME="GribToNC Coverage Results" MODIFIED="1517820664227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/client" />
+    <SUITE FILE_PATH="coverage/moji$multi_prelearning.coverage" NAME="multi_prelearning Coverage Results" MODIFIED="1520418752373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$eccodes.coverage" NAME="eccodes Coverage Results" MODIFIED="1525349318531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$celery.coverage" NAME="celery Coverage Results" MODIFIED="1527156720983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/test_celery" />
+    <SUITE FILE_PATH="coverage/moji$pydevd.coverage" NAME="pydevd Coverage Results" MODIFIED="1515059933623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_HOME_DIR$/helpers/pydev" />
+    <SUITE FILE_PATH="coverage/moji$celery_2.coverage" NAME="celery_2 Coverage Results" MODIFIED="1527220616887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$ecxgboost_multitemp.coverage" NAME="ecxgboost_multitemp Coverage Results" MODIFIED="1525316035324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboostlive" />
+    <SUITE FILE_PATH="coverage/moji$csvprocess.coverage" NAME="csvprocess Coverage Results" MODIFIED="1517895103802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboost" />
+    <SUITE FILE_PATH="coverage/moji$jsonTomysql2.coverage" NAME="jsonTomysql2 Coverage Results" MODIFIED="1521861029678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cimissJson" />
+    <SUITE FILE_PATH="coverage/moji$f_reger.coverage" NAME="f_reger Coverage Results" MODIFIED="1522402326349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$oss_loadput.coverage" NAME="oss_loadput Coverage Results" MODIFIED="1517485233376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS" />
+    <SUITE FILE_PATH="coverage/moji$windrose.coverage" NAME="windrose Coverage Results" MODIFIED="1519697487395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/windrose" />
+    <SUITE FILE_PATH="coverage/moji$avg_temp_24h_from3h.coverage" NAME="avg_temp_24h_from3h Coverage Results" MODIFIED="1530182648662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/accuracy" />
+    <SUITE FILE_PATH="coverage/moji$multiprocesstest.coverage" NAME="multiprocesstest Coverage Results" MODIFIED="1520419874420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/moji$portableProcess.coverage" NAME="portableProcess Coverage Results" MODIFIED="1524478889309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OlympicWinterGames" />
+    <SUITE FILE_PATH="coverage/moji$cldas_process.coverage" NAME="cldas_process Coverage Results" MODIFIED="1526968661749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cimissJson" />
+    <SUITE FILE_PATH="coverage/moji$xgboostlive_rain.coverage" NAME="xgboostlive_rain Coverage Results" MODIFIED="1528798879455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MOS/xgboostlive" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="moji" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ecxgboostlive_dem2.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive_dem2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-10104">
+              <caret line="924" column="8" lean-forward="false" selection-start-line="924" selection-start-column="8" selection-end-line="924" selection-end-column="8" />
+              <folding>
+                <element signature="e#185#279#0" expanded="true" />
+                <element signature="e#432#14219#0" expanded="false" />
+                <element signature="e#30922#38908#0" expanded="false" />
+                <element signature="e#39194#51134#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="avg_temp_24h_from3h.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MOS/accuracy/avg_temp_24h_from3h.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="76" column="52" lean-forward="false" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="52" />
+              <folding>
+                <marker date="1531291373504" expanded="true" signature="542:811" ph="select city_... t_r_ec_city_forecast_ele_mos" />
+                <marker date="1531291373504" expanded="true" signature="993:1195" ph="select v0100... t_r_hourly_surf_live_ele" />
+                <marker date="1531291373504" expanded="true" signature="3504:3703" ph="select city_... t_r_ec_city_forecast_ele_mos" />
+                <marker date="1531291373504" expanded="true" signature="4177:4323" ph="select v0100... t_r_hourly_surf_live_ele" />
+                <marker date="1531291373504" expanded="true" signature="6404:6583" ph="select city_... t_r_ec_mos_city_forecast_ele" />
+                <marker date="1531291373504" expanded="true" signature="6793:6932" ph="select v0100... t_r_hourly_surf_live_ele" />
+                <marker date="1531291373504" expanded="true" signature="8026:8217" ph="select city_... t_r_ec_mos_city_forecast_ele" />
+                <marker date="1531291373504" expanded="true" signature="8026:8218" ph="select city_... t_r_ec_mos_city_forecast_ele" />
+                <marker date="1531291373504" expanded="true" signature="8719:8865" ph="select v0100... t_r_hourly_surf_live_ele" />
+                <marker date="1531291373504" expanded="true" signature="10124:10245" ph="insert into t_r_3h_rain_accu_mos... " />
+                <marker date="1531291373504" expanded="true" signature="10480:10671" ph="select city_... t_r_ec_city_forecast_ele_mos" />
+                <marker date="1531291373504" expanded="true" signature="10887:11065" ph="select v0100... t_r_hourly_surf_live_ele" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ecxgboost_maxmintemp.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MOS/xgboost/ecxgboost_maxmintemp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ecxgboost_maxmintemp6h.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MOS/xgboost/ecxgboost_maxmintemp6h.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="249" column="0" lean-forward="false" selection-start-line="249" selection-start-column="0" selection-end-line="269" selection-end-column="34" />
+              <folding>
+                <element signature="e#165#247#0" expanded="true" />
+                <element signature="e#10066#12332#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="henantraffic_live.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cimissJson/henantraffic_live.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-16434">
+              <caret line="91" column="8" lean-forward="true" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ecxgboost_maxmintemp6h_pool.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MOS/xgboost/ecxgboost_maxmintemp6h_pool.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+              <folding>
+                <element signature="e#616#1852#0" expanded="false" />
+                <element signature="e#1882#3107#0" expanded="false" />
+                <element signature="e#3145#4258#0" expanded="false" />
+                <element signature="e#4296#5358#0" expanded="false" />
+                <element signature="e#5538#9736#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ecxgboost_maxmintemp6h_dem_Dels.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MOS/xgboost/ecxgboost_maxmintemp6h_dem_Dels.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ecxgboost_maxmintemp6h_dem.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MOS/xgboost/ecxgboost_maxmintemp6h_dem.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20274">
+              <caret line="662" column="19" lean-forward="false" selection-start-line="662" selection-start-column="19" selection-end-line="662" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eclearning_plus.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MOS/xgboost/eclearning_plus.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>R</find>
+      <find>outpath</find>
+      <find>20150610</find>
+      <find>stationlist</find>
+      <find>T0</find>
+      <find>(float(lon)+float(1/3601*0.5)-int(lon))/float(Decimal(1)/Decimal(3601))</find>
+      <find>(float(lon)+float(1/3601*0.5)-int(lon))/(Decimal(1)/Decimal(3601))</find>
+      <find>10</find>
+      <find>MAXI</find>
+      <find>print</find>
+      <find>2015</find>
+      <find>2 me</find>
+      <find>201</find>
+      <find>2017</find>
+      <find>precipitation</find>
+      <find>10 metre</find>
+      <find>U component of wind</find>
+      <find>Geopotential Height</find>
+      <find>Geopotential</find>
+      <find>DECIMAO</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>int((float(lon)+float(1/3601*0.5)-int(lon))/float(Decimal(1)/Decimal(3601)))</replace>
+      <replace>int((float(lon)+float(1/3601*0.5)-int(lon))/(Decimal(1)/Decimal(3601)))</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/test</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/MOS/xgboost" value="master" />
+      </map>
+    </option>
+    <push-targets>
+      <push-target-info target-remote="github" target-branch="master" repo="$PROJECT_DIR$" source="master" />
+    </push-targets>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/cimissJson/henan_livebak.py" />
+        <option value="$PROJECT_DIR$/cimissJson/cldasdata_multiprocess.py" />
+        <option value="$PROJECT_DIR$/test/numpyqiepian.py" />
+        <option value="$PROJECT_DIR$/cimissJson/getcldasdata.py" />
+        <option value="$PROJECT_DIR$/cimissJson/getcldasdata_multiprocess.py" />
+        <option value="$PROJECT_DIR$/cimissJson/henan_traffic.py" />
+        <option value="$PROJECT_DIR$/cimissJson/getcldas625data_multiprocess.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboostlive/mos_live/moscelery.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboostlive/mos_live/mostasks.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboostlive/mos_live/celeryconfig.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboostlive/xgboost_maxtemp.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboostlive/xgboostlive_rain.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboostlive/ecxgboost_temperatureAll.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboostlive/xgboostlive_temp.py" />
+        <option value="$PROJECT_DIR$/cimissJson/lighting.py" />
+        <option value="$PROJECT_DIR$/cimissJson/henan_live.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboost/ecxgboost_maxmintemp6h_dem.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboostlive/xgboostlive.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboostlive/echistory_download.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboostlive/eclive_download.py" />
+        <option value="$PROJECT_DIR$/MOS/accuracy/avg_temp_24h.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboost/ecxgboost_rain.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboost/ecxgboost_traintestnum.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboostlive/oss_download.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive2.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboost/ecxgboost_rainpre.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive.py" />
+        <option value="$PROJECT_DIR$/cimissJson/deletecldas.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive3_grib.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive2_dem.py" />
+        <option value="$PROJECT_DIR$/cimissJson/cldasTobigdata_pythonforsh.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboost/eclearning_plus.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive4.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlivedem.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboostlive/demstation16.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive_rain.py" />
+        <option value="$PROJECT_DIR$/test/pygribtest.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlivedem2.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive_dem.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive3.py" />
+        <option value="$PROJECT_DIR$/MOS/accuracy/avg_temp_24h_from3h.py" />
+        <option value="$PROJECT_DIR$/MOS/accuracy/avg_temp_24h_from3h_dem.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboost/ecxgboost_maxtem6h_dem.py" />
+        <option value="$PROJECT_DIR$/test/test1.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboost/ECdataprocess.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboost/ecxgboost_maxtem6h_dem222.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboost/ecxgboost_maxmintemp6h.py" />
+        <option value="$PROJECT_DIR$/MOS/xgboost/ecxgboost_maxmintemp6h_pool.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive_dem2.py" />
+        <option value="$PROJECT_DIR$/cimissJson/henantraffic_live.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-191" />
+    <option name="y" value="-1057" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Flow type checkerJavaScript</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>Google App Engine (Python)</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>Invalid elementsCSS</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Properties Files</id>
+          </State>
+          <State>
+            <id>Puppet</id>
+          </State>
+          <State>
+            <id>Pyramid</id>
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AngularJS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="moji" type="b2602c69:ProjectViewProjectNode" />
+              <item name="moji" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="moji" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="moji" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="moji" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/MOS/dataprocess" />
+      <recent name="$PROJECT_DIR$/test" />
+      <recent name="$PROJECT_DIR$/MOS/xgboost" />
+      <recent name="$PROJECT_DIR$/MOS/scikitLearning" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/MOS/xgboost" />
+      <recent name="$PROJECT_DIR$/MOS/xgboostlive" />
+      <recent name="$PROJECT_DIR$/MOS/accuracy" />
+      <recent name="$PROJECT_DIR$/cimissJson" />
+      <recent name="$PROJECT_DIR$/MOS/xgboostlive/mos_live" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.ECdataprocess">
+    <configuration name="ECdataprocess" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MOS/xgboost" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="moji" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MOS/xgboost/ECdataprocess.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Readmysql" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda2/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="moji" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MOS/dataprocess/Readmysql.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="ReadmysqlPRE" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda2/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="moji" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MOS/dataprocess/ReadmysqlPRE.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Readmysql_linux" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda2/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="moji" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MOS/dataprocess/Readmysql_linux.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="ecxgboost_maxtem6h_dem222" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MOS/xgboost" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="moji" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MOS/xgboost/ecxgboost_maxtem6h_dem222.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="ecxgboostlive3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MOS/xgboostlive" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="moji" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="ecxgboostlive_dem2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MOS/xgboostlive" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="moji" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive_dem2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="getcldasdata" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cimissJson" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="moji" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cimissJson/getcldasdata.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="moji" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="9">
+      <item index="0" class="java.lang.String" itemvalue="Python.getcldasdata" />
+      <item index="1" class="java.lang.String" itemvalue="Python.ReadmysqlPRE" />
+      <item index="2" class="java.lang.String" itemvalue="Python.Readmysql" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Readmysql_linux" />
+      <item index="4" class="java.lang.String" itemvalue="Python.ecxgboostlive3" />
+      <item index="5" class="java.lang.String" itemvalue="Python.ecxgboostlive_dem2" />
+      <item index="6" class="java.lang.String" itemvalue="Python.ecxgboost_maxtem6h_dem222" />
+      <item index="7" class="java.lang.String" itemvalue="Python.test1" />
+      <item index="8" class="java.lang.String" itemvalue="Python.ECdataprocess" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.ECdataprocess" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test1" />
+        <item index="2" class="java.lang.String" itemvalue="Python.ecxgboost_maxtem6h_dem222" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ecxgboostlive_dem2" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ecxgboostlive3" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="af243767-e9fa-4782-aa27-34a368fa7b17" name="Default" comment="" />
+      <created>1514339524955</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1514339524955</updated>
+    </task>
+    <task id="LOCAL-00001" summary="20180416一起上传的文件，建立代码备份的开始，可能技术还不是很完善，就一起上传了。">
+      <created>1523850263694</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1523850263694</updated>
+    </task>
+    <task id="LOCAL-00002" summary="增加位势高度，增加DEM高程数据代码">
+      <created>1523880355079</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1523880355079</updated>
+    </task>
+    <task id="LOCAL-00003" summary="代码：没有站点的经纬度和高度，只取的位势高度和DEM数据">
+      <created>1524888928108</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1524888928108</updated>
+    </task>
+    <task id="LOCAL-00004" summary="moji">
+      <created>1526005236840</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1526005236841</updated>
+    </task>
+    <task id="LOCAL-00005" summary="mos统计线上运行代码">
+      <created>1530691132163</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1530691132164</updated>
+    </task>
+    <task id="LOCAL-00006" summary="moji">
+      <created>1530691319165</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1530691319165</updated>
+    </task>
+    <task id="LOCAL-00007" summary="mos统计">
+      <created>1530691914582</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1530691914582</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_in_test - 2018.03.26 at 11h 17m 48s.xml">
+      <configuration name="Unittests in test" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="TodoView" selected-index="2">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-191" y="-1057" width="1920" height="1057" extended-state="0" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38877338" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29313928" sideWeight="0.15548456" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32746956" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21496598" sideWeight="0.84451544" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24627875" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12300319" sideWeight="0.4945355" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.042495966" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.052715655" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16881259" sideWeight="0.5054645" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29387754" sideWeight="0.74825174" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32611638" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21662125" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38877338" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29313928" sideWeight="0.15548456" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32746956" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41632652" sideWeight="0.84451544" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24627875" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23462088" sideWeight="0.4945355" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.042495966" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32611638" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.052715655" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21662125" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16881259" sideWeight="0.5054645" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3170068" sideWeight="0.74825174" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/moji" />
+      <path value="$PROJECT_DIR$/MOS/xgboost" />
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="20180416一起上传的文件，建立代码备份的开始，可能技术还不是很完善，就一起上传了。" />
+    <MESSAGE value="增加位势高度，增加DEM高程数据代码" />
+    <MESSAGE value="代码：没有站点的经纬度和高度，只取的位势高度和DEM数据" />
+    <MESSAGE value="mos统计线上运行代码" />
+    <MESSAGE value="moji" />
+    <MESSAGE value="mos统计" />
+    <option name="LAST_COMMIT_MESSAGE" value="mos统计" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/dataprocess/ReadmysqlPRE_linux.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/dataprocess/Readgrib.py</url>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/dataprocess/ReadGriblive.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cimissJson/Readjson.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cimissJson/Readjson.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cimissJson/pig.py</url>
+          <line>89</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cimissJson/tempTomaxmin.py</url>
+          <line>96</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cimissJson/tempTomaxmin.py</url>
+          <line>91</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cimissJson/tempTomaxmin.py</url>
+          <line>90</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cimissJson/sail.py</url>
+          <line>50</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/dataprocess/Readgrib.py</url>
+          <line>230</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/dataprocess/yieldtest.py</url>
+          <line>205</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/dataprocess/yieldtest.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/dataprocess/yieldtest.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/scikitLearning/learningtest.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/scikitLearning/parameterGBM.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/scikitLearning/gbtd_regression.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/scikitLearning/MOSGBDT.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/client/GribToNC.py</url>
+          <line>74</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/dataprocess/Readmysql.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/dataprocess/Readmysql_linux.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/img2nc.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboost/ReadEC65timesOnetime.py</url>
+          <line>82</line>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboost/ecxgboost_linux.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/dataprocess/ReadmysqlPRE.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/OlympicWinterGames/Hourly_6Ele_qcTomysql.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboost/ecxgboost20180223.py</url>
+          <line>68</line>
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboost/ecxgboost20180223.py</url>
+          <line>69</line>
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboost/ECdataprocess.py</url>
+          <line>256</line>
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboost/ECdataprocess.py</url>
+          <line>275</line>
+          <option name="timeStamp" value="144" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboost/ECdataprocess.py</url>
+          <line>274</line>
+          <option name="timeStamp" value="145" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboost/ECdataprocess.py</url>
+          <line>265</line>
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboost/multi_prelearning.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboost/ecmulti_test.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboost/multimanagerEC.py</url>
+          <line>294</line>
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboost/ECdataprocess.py</url>
+          <line>56</line>
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboost/ECdataprocess.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="156" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/dataprocess/ReadmysqlPRE6h.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/dataprocess/maxmintemp24h.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="160" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/dataprocess/maxmintemp24h.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="161" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cimissJson/Readjson.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="162" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cimissJson/jsonTomysql.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="163" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cimissJson/jsonTomysql2.py</url>
+          <line>193</line>
+          <option name="timeStamp" value="164" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/dataprocess/maxminavg24Tomysql.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="166" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/jigao/wrf2city.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="167" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/dataprocess/ReadmysqlPRE6h_linux.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="176" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboost/ECdataprocess.py</url>
+          <line>180</line>
+          <option name="timeStamp" value="182" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboost/ecxgboost_maxmintemp.py</url>
+          <line>117</line>
+          <option name="timeStamp" value="189" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/dataprocess/demProcessing.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="208" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/OlympicWinterGames/yanqing30.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="210" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboostlive/ecxgboost_temp.py</url>
+          <line>156</line>
+          <option name="timeStamp" value="218" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cimissJson/getcldasdata_multiprocess.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="231" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cimissJson/getcldas625data_multiprocess.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="232" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboost/ecxgboost_maxmintemp6h.py</url>
+          <line>127</line>
+          <option name="timeStamp" value="253" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/accuracy/avg_temp_24h_from3h.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="260" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/accuracy/avg_temp_24h_from3h.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="261" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboost/ecxgboost_raintest.py</url>
+          <line>71</line>
+          <option name="timeStamp" value="263" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/accuracy/avg_temp_24h_from3h.py</url>
+          <line>161</line>
+          <option name="timeStamp" value="265" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboost/ecxgboost_maxmintemp6h.py</url>
+          <line>120</line>
+          <option name="timeStamp" value="271" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboost/ecxgboost_maxmintemp6h.py</url>
+          <line>218</line>
+          <option name="timeStamp" value="272" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboost/ecxgboost_maxmintemp6h.py</url>
+          <line>214</line>
+          <option name="timeStamp" value="273" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboost/ecxgboost_maxtem6h_dem.py</url>
+          <line>486</line>
+          <option name="timeStamp" value="276" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive3.py</url>
+          <line>886</line>
+          <option name="timeStamp" value="279" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/pygribtest.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="282" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/pygribtest.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="283" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive3.py</url>
+          <line>863</line>
+          <option name="timeStamp" value="285" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive3.py</url>
+          <line>891</line>
+          <option name="timeStamp" value="288" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MOS/xgboost/ecxgboost_maxtem6h_dem222.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="290" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cimissJson/henantraffic_live.py</url>
+          <line>92</line>
+          <option name="timeStamp" value="291" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cimissJson/henantraffic_live.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="292" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="293" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/cimissJson/henan_live.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="493" column="0" lean-forward="false" selection-start-line="493" selection-start-column="0" selection-end-line="498" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cimissJson/jsonTomysql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3174">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cimissJson/jiliangStation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1188">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cimissJson/invdisttree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cimissJson/jsonTomysql2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="191" column="32" lean-forward="true" selection-start-line="191" selection-start-column="32" selection-end-line="191" selection-end-column="32" />
+          <folding>
+            <marker date="1521861082640" expanded="true" signature="8057:8945" ph="insert into cimiss_mos... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cimissJson/Readjson.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2569">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cimissJson/cimiss_hourly.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-161">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cimissJson/cimiss_cldas_multiprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-182">
+          <caret line="65" column="34" lean-forward="true" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboost/ecxgboost_rainpre.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="328" column="5" lean-forward="false" selection-start-line="328" selection-start-column="5" selection-end-line="328" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cimissJson/cldasdatabak.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cimissJson/getcldas625data_multiprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="635">
+          <caret line="131" column="61" lean-forward="true" selection-start-line="131" selection-start-column="32" selection-end-line="131" selection-end-column="61" />
+          <folding>
+            <element signature="e#143#207#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cimissJson/deletecldas.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="51" column="5" lean-forward="false" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboostlive/ecxgboost_temperatureAll.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-322">
+          <caret line="552" column="22" lean-forward="false" selection-start-line="552" selection-start-column="20" selection-end-line="552" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboostlive/ecxgboost_t.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboostlive/ecxgboost_temphistory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23126">
+          <caret line="748" column="34" lean-forward="false" selection-start-line="748" selection-start-column="34" selection-end-line="748" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboostlive/ecxgboost_new_temp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboostlive/ecxgboost_maxmint.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboostlive/eclive_download.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6200">
+          <caret line="209" column="51" lean-forward="false" selection-start-line="209" selection-start-column="51" selection-end-line="209" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboostlive/ecxgboost_temp_optimalize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6603">
+          <caret line="213" column="0" lean-forward="false" selection-start-line="213" selection-start-column="0" selection-end-line="219" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive3_grib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3656">
+          <caret line="887" column="8" lean-forward="false" selection-start-line="887" selection-start-column="8" selection-end-line="887" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive2_dem.py" />
+    <entry file="file://$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-625">
+          <caret line="716" column="33" lean-forward="true" selection-start-line="716" selection-start-column="33" selection-end-line="716" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cimissJson/cldasTobigdata_pythonforsh.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="766">
+          <caret line="44" column="10" lean-forward="false" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cimissJson/cldasTobigdata_pythonforsh2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlivedem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3270">
+          <caret line="1111" column="0" lean-forward="false" selection-start-line="1111" selection-start-column="0" selection-end-line="1111" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive_rain.py" />
+    <entry file="file://$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21855">
+          <caret line="707" column="22" lean-forward="false" selection-start-line="707" selection-start-column="22" selection-end-line="707" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboostlive/demstation16.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10788">
+          <caret line="350" column="35" lean-forward="false" selection-start-line="350" selection-start-column="35" selection-end-line="350" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboost/ecxgboost_traintestnum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2232">
+          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="94" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22227">
+          <caret line="964" column="0" lean-forward="false" selection-start-line="964" selection-start-column="0" selection-end-line="965" selection-end-column="15" />
+          <folding>
+            <element signature="e#332#1274#0" expanded="false" />
+            <element signature="e#1354#3493#0" expanded="false" />
+            <element signature="e#3652#12040#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/pygribtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive_dem2_grib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="1386" column="30" lean-forward="false" selection-start-line="1386" selection-start-column="30" selection-end-line="1386" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive_dem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="386" column="18" lean-forward="false" selection-start-line="386" selection-start-column="18" selection-end-line="386" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/multiprocessing/pool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="290" column="8" lean-forward="false" selection-start-line="290" selection-start-column="8" selection-end-line="290" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboost/ECdataprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5487">
+          <caret line="180" column="12" lean-forward="false" selection-start-line="180" selection-start-column="12" selection-end-line="180" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/accuracy/avg_temp_24h_from3h_dem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9052">
+          <caret line="292" column="32" lean-forward="false" selection-start-line="292" selection-start-column="32" selection-end-line="292" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboost/ecxgboost_maxtem6h_dem222.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27001">
+          <caret line="871" column="24" lean-forward="false" selection-start-line="871" selection-start-column="24" selection-end-line="871" selection-end-column="24" />
+          <folding>
+            <element signature="e#245#315#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboost/ecxgboost_maxtem6h_dem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18538">
+          <caret line="607" column="0" lean-forward="false" selection-start-line="607" selection-start-column="0" selection-end-line="611" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboost/ecxgboost_maxmintemp6h_dem_Dels.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboost/ecxgboost_maxmintemp6h_dem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20274">
+          <caret line="662" column="19" lean-forward="false" selection-start-line="662" selection-start-column="19" selection-end-line="662" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboost/eclearning_plus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboost/ecxgboost_maxmintemp6h_pool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding>
+            <element signature="e#616#1852#0" expanded="false" />
+            <element signature="e#1882#3107#0" expanded="false" />
+            <element signature="e#3145#4258#0" expanded="false" />
+            <element signature="e#4296#5358#0" expanded="false" />
+            <element signature="e#5538#9736#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/accuracy/avg_temp_24h_from3h.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="76" column="52" lean-forward="false" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="52" />
+          <folding>
+            <marker date="1531291373504" expanded="true" signature="542:811" ph="select city_... t_r_ec_city_forecast_ele_mos" />
+            <marker date="1531291373504" expanded="true" signature="993:1195" ph="select v0100... t_r_hourly_surf_live_ele" />
+            <marker date="1531291373504" expanded="true" signature="3504:3703" ph="select city_... t_r_ec_city_forecast_ele_mos" />
+            <marker date="1531291373504" expanded="true" signature="4177:4323" ph="select v0100... t_r_hourly_surf_live_ele" />
+            <marker date="1531291373504" expanded="true" signature="6404:6583" ph="select city_... t_r_ec_mos_city_forecast_ele" />
+            <marker date="1531291373504" expanded="true" signature="6793:6932" ph="select v0100... t_r_hourly_surf_live_ele" />
+            <marker date="1531291373504" expanded="true" signature="8026:8217" ph="select city_... t_r_ec_mos_city_forecast_ele" />
+            <marker date="1531291373504" expanded="true" signature="8026:8218" ph="select city_... t_r_ec_mos_city_forecast_ele" />
+            <marker date="1531291373504" expanded="true" signature="8719:8865" ph="select v0100... t_r_hourly_surf_live_ele" />
+            <marker date="1531291373504" expanded="true" signature="10124:10245" ph="insert into t_r_3h_rain_accu_mos... " />
+            <marker date="1531291373504" expanded="true" signature="10480:10671" ph="select city_... t_r_ec_city_forecast_ele_mos" />
+            <marker date="1531291373504" expanded="true" signature="10887:11065" ph="select v0100... t_r_hourly_surf_live_ele" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboost/ecxgboost_maxmintemp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboost/ecxgboost_maxmintemp6h.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="249" column="0" lean-forward="false" selection-start-line="249" selection-start-column="0" selection-end-line="269" selection-end-column="34" />
+          <folding>
+            <element signature="e#165#247#0" expanded="true" />
+            <element signature="e#10066#12332#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cimissJson/henantraffic_live.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16434">
+          <caret line="91" column="8" lean-forward="true" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MOS/xgboostlive/ecxgboostlive_dem2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10104">
+          <caret line="924" column="8" lean-forward="false" selection-start-line="924" selection-start-column="8" selection-end-line="924" selection-end-column="8" />
+          <folding>
+            <element signature="e#185#279#0" expanded="true" />
+            <element signature="e#432#14219#0" expanded="false" />
+            <element signature="e#30922#38908#0" expanded="false" />
+            <element signature="e#39194#51134#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
