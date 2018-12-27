@@ -1,0 +1,6 @@
+if (shortName is "2t" || shortName is "2d" || shortName is "10u" ||shortName is "10v" || shortName is "sp") {
+    write;
+}
+if ((shortName is "t" || shortName is "u" || shortName is "v" || shortName is "") && (level==500 || level==750 || level==850 || level==925 || level==1000)){
+	write;
+}
