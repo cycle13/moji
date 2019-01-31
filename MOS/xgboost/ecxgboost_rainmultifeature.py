@@ -421,6 +421,7 @@ def modelprocess(stationdict, stationlist, ll,allpath):
         len(u_test))
 if __name__ == '__main__':
     starttime = datetime.datetime.now()
+    print starttime
     #outpath = '/Users/yetao.lu/Desktop/mos/anonymous'
     outpath = '/home/wlan_dev/model'
     ll=60
@@ -450,8 +451,9 @@ if __name__ == '__main__':
         precsv = '/home/wlan_dev/pre6h'
         stationdict = pre6hTodict(precsv)
     #allpath = '/Users/yetao.lu/Documents/testdata/'
-    allpath = '/mnt/data/MOS/'
+    allpath = '/mnt/data/MOS/2015/06'
     modelprocess(stationdict,stationlist,ll,allpath)
     endtime = datetime.datetime.now()
+    print endtime
     # print len(dict)
     print(endtime - starttime).seconds

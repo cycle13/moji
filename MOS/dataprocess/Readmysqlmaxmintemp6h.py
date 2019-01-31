@@ -8,11 +8,11 @@ description:
 """
 import MySQLdb,datetime
 if __name__ == "__main__":
-    firstdate = '20150601 00:00:00'
+    firstdate = '20160601 00:00:00'
     pdatetime = datetime.datetime.strptime(firstdate, '%Y%m%d %H:%M:%S')
-    db = MySQLdb.connect('192.168.1.84', 'admin', 'moji_China_123', 'moge')
+    db = MySQLdb.connect('192.168.10.84', 'admin', 'moji_China_123', 'moge')
     cursor = db.cursor()
-    filepath='/Users/yetao.lu/Desktop/mos/data/temmaxmin6h/temaxmin2015.csv'
+    filepath='/Users/yetao.lu/Desktop/mos/data/temmaxmin6h/maxmin2016.csv'
     filewrite=open(filepath,'w')
     for i in range(92):
         tmpdate=pdatetime+datetime.timedelta(days=i)
@@ -22,7 +22,7 @@ if __name__ == "__main__":
             pdatestring=datetime.datetime.strftime(ppdate,'%Y-%m-%d %H:%M:%S')
             odatestring=datetime.datetime.strftime(odatetime,'%Y-%m-%d %H:%M:%S')
             #2015
-            sql = 'SELECT Station_Id_d , ANY_VALUE(Lat) , ANY_VALUE(Lon) , ANY_VALUE(Alti) , MAX(TEM),MIN(TEM) FROM cimiss_mos WHERE vdate >= "' + pdatestring + '" AND vdate < "' + odatestring + '" GROUP BY Station_Id_d'
+            sql = 'SELECT Station_Id_d , ANY_VALUE(Lat) , ANY_VALUE(Lon) , ANY_VALUE(Alti) , MAX(TEM),MIN(TEM) FROM cimiss_mos WHERE vdate > "' + pdatestring + '" AND vdate <= "' + odatestring + '" GROUP BY Station_Id_d'
             #2016\2017
             #sql='SELECT Station_Id_d , ANY_VALUE(Lat) , ANY_VALUE(Lon) , ANY_VALUE(Alti) , MAX(TEM_Max),MIN(TEM_Min) FROM cimiss_mos WHERE vdate >= "'+pdatestring+'" AND vdate < "'+odatestring+'" GROUP BY Station_Id_d'
             cursor.execute(sql)

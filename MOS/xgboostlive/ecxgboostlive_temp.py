@@ -7,8 +7,9 @@ date:       2018/5/4
 description:线上的最新最高气温、最低气温、气温预测
 """
 import Nio, datetime, os, xgboost, numpy, bz2, \
-    multiprocessing, sys, MySQLdb, pygrib,shutil,logging
+    multiprocessing, sys, MySQLdb, pygrib,shutil,logging,time
 from sklearn.externals import joblib
+from apscheduler.schedulers.background import BackgroundScheduler
 def perstationvalue(vstring,latlonArray,indexlat,indexlon):
     vstring.append(latlonArray[indexlat][indexlon])
     vstring.append(latlonArray[indexlat][indexlon + 1])
@@ -27,49 +28,8 @@ def perstationvalue(vstring,latlonArray,indexlat,indexlon):
     vstring.append(latlonArray[indexlat + 1][indexlon - 1])
     vstring.append(latlonArray[indexlat][indexlon - 1])
     return vstring
-def perstationvalue_p(vstring,latlonArray,platlonArray,indexlat,indexlon):
-    vstring.append(1000 * (
-            latlonArray[indexlat][indexlon] - platlonArray[indexlat][
-        indexlon]))
-    vstring.append(1000 * (
-            latlonArray[indexlat][indexlon + 1] - platlonArray[indexlat][
-        indexlon + 1]))
-    vstring.append(1000 * (latlonArray[indexlat + 1][indexlon + 1] -
-                           platlonArray[indexlat + 1][indexlon + 1]))
-    vstring.append(1000 * (
-            latlonArray[indexlat + 1][indexlon] - platlonArray[indexlat + 1][
-        indexlon]))
-    vstring.append(1000 * (latlonArray[indexlat - 1][indexlon - 1] -
-                           platlonArray[indexlat - 1][indexlon - 1]))
-    vstring.append(1000 * (
-            latlonArray[indexlat - 1][indexlon] - platlonArray[indexlat - 1][
-        indexlon]))
-    vstring.append(1000 * (latlonArray[indexlat - 1][indexlon + 1] -
-                           platlonArray[indexlat - 1][indexlon + 1]))
-    vstring.append(1000 * (latlonArray[indexlat - 1][indexlon + 2] -
-                           platlonArray[indexlat - 1][indexlon + 2]))
-    vstring.append(1000 * (
-            latlonArray[indexlat][indexlon + 2] - platlonArray[indexlat][
-        indexlon + 2]))
-    vstring.append(1000 * (latlonArray[indexlat + 1][indexlon + 2] -
-                           platlonArray[indexlat + 1][indexlon + 2]))
-    vstring.append(1000 * (latlonArray[indexlat + 2][indexlon + 2] -
-                           platlonArray[indexlat + 2][indexlon + 2]))
-    vstring.append(1000 * (latlonArray[indexlat + 2][indexlon + 1] -
-                           platlonArray[indexlat + 2][indexlon + 1]))
-    vstring.append(1000 * (
-            latlonArray[indexlat + 2][indexlon] - platlonArray[indexlat + 2][
-        indexlon]))
-    vstring.append(1000 * (latlonArray[indexlat + 2][indexlon - 1] -
-                           platlonArray[indexlat + 2][indexlon - 1]))
-    vstring.append(1000 * (latlonArray[indexlat + 1][indexlon - 1] -
-                           platlonArray[indexlat + 1][indexlon - 1]))
-    vstring.append(1000 * (
-            latlonArray[indexlat][indexlon - 1] - platlonArray[indexlat][
-        indexlon - 1]))
-    return vstring
-def calculateStationVariable(hours,tempvariablelist,maxtempvariablelist,mintempvariablelist,rainvariablelist,inputfile,previouspath,stationlist,csvfile):
-    if inputfile[-4:]=='grib' and previouspath[-4:]=='grib':
+def calculateStationVariable(tempvariablelist,inputfile,stationlist,csvfile):
+    if inputfile[-3:]=='001':
         grbs=pygrib.open(inputfile)
         # grbs.seek(0)
         # print grbs.seek(0)
@@ -92,18 +52,6 @@ def calculateStationVariable(hours,tempvariablelist,maxtempvariablelist,mintempv
         rh500Array=grb[0].values
         grb=grbs.select(name='Relative humidity', level=850)
         rh850Array=grb[0].values
-        grb=grbs.select(name='Total precipitation')
-        tpArray=grb[0].values
-        grb=grbs.select(name='Convective precipitation')
-        cpArray=grb[0].values
-        grb=grbs.select(name='U component of wind',level=500)
-        u500Array=grb[0].values
-        grb=grbs.select(name='V component of wind',level=500)
-        v500Array=grb[0].values
-        grb=grbs.select(name='U component of wind',level=850)
-        u850Array=grb[0].values
-        grb=grbs.select(name='V component of wind',level=850)
-        v850Array=grb[0].values
         idlist=[]
         fileread = open(csvfile, 'r')
         fileread.readline()
@@ -160,18 +108,16 @@ def calculateStationVariable(hours,tempvariablelist,maxtempvariablelist,mintempv
                 vstring=[]
             #添加到总的矩阵中
             tempvariablelist.append(templist)
-            maxtempvariablelist.append(maxlist)
-            mintempvariablelist.append(minlist)
-            rainvariablelist.append(rainlist)
             if not line:
                 break
 def Predict(hours,outfilename,modelname,tempscalerfile, origintime, foretime, outpath,csvfile):
     try:
         #气温
+        print 'aaa'
         tempvariablelist = []
         rainvariablelist=[]
         stationlist=[]
-        calculateStationVariable(hours,tempvariablelist,rainvariablelist,outfilename,previouspath,stationlist,csvfile)
+        calculateStationVariable(tempvariablelist,outfilename,stationlist,csvfile)
         # 加载训练模型
         params = {
             'booster': 'gbtree',
@@ -229,7 +175,6 @@ def Predict(hours,outfilename,modelname,tempscalerfile, origintime, foretime, ou
             #遍历降水预测中是否有该站点
             prevalue=0
             temp = result[j]
-
             #每个站点存储
             perstationlist.append(stationid)
             perstationlist.append(origin)
@@ -239,7 +184,7 @@ def Predict(hours,outfilename,modelname,tempscalerfile, origintime, foretime, ou
             perstationlist.append(forecast_day)
             perstationlist.append(forecast_hour)
             perstationlist.append(temp)
-            perstationlist.append(prevalue)
+            #logger.info(perstationlist)
             L.append(perstationlist)
             # sql='insert into t_r_ec_mos_city_forecast_ele(city_id,initial_time,forecast_time,forecsat_year,forecast_month,forecast_day,forecast_hour,temperature)VALUES ()'
             # sql = 'insert into t_r_ec_city_forecast_ele_mos (city_id,initial_time,forecast_time,forecast_year,forecast_month,forecast_day,forecast_hour,temperature,temp_max_6h,temp_min_6h,rainstate,precipitation)VALUES ("' + stationid + '","' + origin + '","' + str(
@@ -252,48 +197,17 @@ def Predict(hours,outfilename,modelname,tempscalerfile, origintime, foretime, ou
             #     forecast_hour) + '","' + str(forecast_minute) + '","' + str(
             #     temp)+ '","' + str(maxtemp)+ '","' + str(mintemp)+'","' + str(rainstate)+'","' + str(prevalue))
             # csvfile.write('\n')
-            print sql
             #cursor.execute(sql)
         cursor.executemany(sql,L)
         db.commit()
         db.close()
         # csvfile.close()
-        os.remove(outfilename)
         logger.info(outfilename)
     except Exception as e:
         logger.info(e.message)
-if __name__ == "__main__":
-    #加日志
-    logger = logging.getLogger('learing.logger')
-    # 指定logger输出格式
-    formatter = logging.Formatter('%(asctime)s %(levelname)-8s: %(message)s')
-    # 文件日志learning
-    logfile='/home/wlan_dev/learning.log'
-    #logfile='/Users/yetao.lu/Desktop/mos/temp/loging.log'
-    file_handler = logging.FileHandler(logfile)
-    file_handler.setFormatter(formatter)  # 可以通过setFormatter指定输出格式
-    # 控制台日志
-    console_handler = logging.StreamHandler(sys.stdout)
-    console_handler.formatter = formatter  # 也可以直接给formatter赋值
-
-    # 为logger添加的日志处理器
-    logger.addHandler(file_handler)
-    logger.addHandler(console_handler)
-
-    # 指定日志的最低输出级别，默认为WARN级别
-    logger.setLevel(logging.INFO)
-    starttime=datetime.datetime.now()
-    # 遍历所有文件，预测历史数据
-    path='/home/wlan_dev/tmp'
-    outpath='/home/wlan_dev/result'
-    # path = '/Users/yetao.lu/Desktop/mos/new'
-    # outpath = '/Users/yetao.lu/Desktop/mos/temp'
-    if not os.path.exists(outpath):
-        os.makedirs(outpath)
-    # 遍历2867个站点
-    #csvfile = '/Users/yetao.lu/Desktop/mos/stations.csv'
-    csvfile = '/home/wlan_dev/stations.csv'
-    pool = multiprocessing.Pool(8)
+def modelpredict(path,outpath,csvfile,starttime):
+    fromtime=datetime.datetime.now()
+    pool = multiprocessing.Pool(16)
     #打开文件读取变量的时间比较长，因此想把所有要素的预测都做了,
     bz2list=[]
     rootpath=''
@@ -306,7 +220,7 @@ if __name__ == "__main__":
                 bz2list.append(file)
     #把列表排序
     bz2list001=sorted(bz2list)
-    print bz2list001
+    logger.info(bz2list001)
     for i in range(len(bz2list001)):
         file=bz2list[i]
         bz2file = os.path.join(root, file)
@@ -340,8 +254,67 @@ if __name__ == "__main__":
         #     id) + '.model'
         # tempscalerfile = '/Users/yetao.lu/Desktop/mos/model/temp/scale' + str(
         #     id) + '.save'
+        print tempscalerfile
+        #Predict(hours,filename ,modelname, tempscalerfile, origintime, endtime, outpath,csvfile)
         pool.apply_async(Predict,args=(hours,filename ,modelname, tempscalerfile, origintime, endtime, outpath,csvfile))
     pool.close()
     pool.join()
-    endtime = datetime.datetime.now()
-    logger.info((endtime - starttime).seconds)
+    totime=datetime.datetime.now()
+    alltime=totime-fromtime
+    logger.info(alltime.seconds)
+if __name__ == "__main__":
+    #加日志
+    logger = logging.getLogger('learing.logger')
+    # 指定logger输出格式
+    formatter = logging.Formatter('%(asctime)s %(levelname)-8s: %(message)s')
+    # 文件日志learning
+    logfile='/home/wlan_dev/learning.log'
+    #logfile='/Users/yetao.lu/Desktop/mos/temp/loging.log'
+    file_handler = logging.FileHandler(logfile)
+    file_handler.setFormatter(formatter)  # 可以通过setFormatter指定输出格式
+    # 控制台日志
+    console_handler = logging.StreamHandler(sys.stdout)
+    console_handler.formatter = formatter  # 也可以直接给formatter赋值
+
+    # 为logger添加的日志处理器
+    logger.addHandler(file_handler)
+    logger.addHandler(console_handler)
+
+    # 指定日志的最低输出级别，默认为WARN级别
+    logger.setLevel(logging.INFO)
+    starttime=datetime.datetime.now()
+    # 遍历所有文件，预测历史数据
+    yearint=datetime.datetime.now().year
+    path='/moji/ecdata'
+    hours=datetime.datetime.now().hour
+    midpath = path + '/' + str(yearint)
+    if hours>12:
+        datestr=datetime.datetime.strftime(starttime,'%Y-%m-%d')
+    else:
+        nowdate=starttime+datetime.timedelta(days=-1)
+        datestr=datetime.datetime.strftime(nowdate,'%Y-%m-%d')
+    ecpath=midpath+'/'+datestr
+    if not os.path.exists(ecpath):
+        logger.info(ecpath+'不存在')
+    outpath='/home/wlan_dev/result'
+    if not os.path.exists(outpath):
+        os.makedirs(outpath)
+    # path = '/Users/yetao.lu/Desktop/mos/new'
+    # outpath = '/Users/yetao.lu/Desktop/mos/temp'
+    # 遍历2867个站点
+    # csvfile = '/Users/yetao.lu/Desktop/mos/stations.csv'
+    csvfile = '/home/wlan_dev/stations.csv'
+    if not os.path.exists(csvfile):
+        logger.info(csvfile+'--csv文件不存在')
+    modelpredict('/home/wlan_dev/tmp/2018-07-10',outpath,csvfile,starttime)
+    # 创建后台执行的schedulers
+    scheduler = BackgroundScheduler()
+    # 添加调度任务
+    # 调度方法为timeTask,触发器选择定时，
+    scheduler.add_job(modelpredict, 'cron', hour='6,18', max_instances=1,args=(ecpath,outpath,csvfile,starttime))
+    try:
+        scheduler.start()
+        while True:
+            time.sleep(2)
+    except Exception as e:
+        print e.message

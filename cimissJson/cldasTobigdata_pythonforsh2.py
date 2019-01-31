@@ -7,8 +7,16 @@ date:       2018/5/23
 description:把CLDAS数据压缩，然后利用Python调用SH脚本传到大数据平台上
 也可以用subprocess
 """
-import os,tarfile,datetime,time,logging,sys,shutil
+import os,tarfile,datetime,time,logging,sys,shutil,subprocess,zipfile
 from apscheduler.schedulers.background import BackgroundScheduler
+def zip_ya(startdir,file_news):
+    z = zipfile.ZipFile(file_news,'w',zipfile.ZIP_DEFLATED,allowZip64=True) #参数一：文件夹名
+    for dirpath, dirnames, filenames in os.walk(startdir):
+        fpath = dirpath.replace(startdir,'') #这一句很重要，不replace的话，就从根目录开始复制
+        fpath = fpath and fpath + os.sep or ''#这句话理解我也点郁闷，实现当前文件夹以及包含的所有文件的压缩
+        for filename in filenames:
+            z.write(os.path.join(dirpath, filename),fpath+filename)
+    z.close()
 def tarfileonebyone(filepath,odatetime):
     if os.path.exists(filepath):
         return None
@@ -20,30 +28,33 @@ def tarfileonebyone(filepath,odatetime):
                 tar.add(filename)
         tar.close()
     return filepath
-    
 def uploadfile():
     pdatetime = datetime.datetime.now()
-    odatetime = pdatetime + datetime.timedelta(days=-6)
+    odatetime = pdatetime + datetime.timedelta(days=-5)
     odate=datetime.datetime.strftime(odatetime,'%Y-%m-%d')
-    path='/home/wlan_dev/henan/'
+    path='/home/wlan_dev/cldas'
     yearstr=str(odatetime.year)
-    filepath=path+'/'+yearstr+'/'+odate
-    filefullname=os.path.join(filepath,odate+'.tar.gz')
-    if not os.path.exists(filefullname):
-        filefullname=tarfileonebyone(filefullname,odatetime)
-    filename=os.path.split(filefullname)[1]
-    fromfilepath=os.path.split(filefullname)[0]
-    tofilefullname='/meteo/moge/data/cldas/'+yearstr+'/'+filename
+    filepath=path+'/'+yearstr
+    filedatepath=path+'/'+yearstr+'/'+odate
+    tofilefullname='/meteo/moge/data/cldas'+'/'+yearstr+'/'+odate+'.zip'
+    fromfilepath=path+'/'+yearstr+'/'
+    zip_ya(filedatepath,filedatepath+'.zip')
     #这里要写全路径
-    a=os.system('/home/wlan_dev/software/bigdata/api/start_hdfs_access.sh '+tofilefullname+' '+fromfilepath)
-    if a<>0:
+    logger.info('/home/wlan_dev/software/bigdata/api/start_hdfs_access.sh '+tofilefullname+' '+fromfilepath)
+    #b = subprocess.call('/home/wlan_dev/software/bigdata/api/start_hdfs_access.sh '+tofilefullname)
+    a = subprocess.call('/home/wlan_dev/software/bigdata/api/start_hdfs_access.sh '+tofilefullname+' '+fromfilepath)
+    if a <> 0:
         time.sleep(600)
-        os.system('/home/wlan_dev/software/bigdata/api/start_hdfs_access.sh '+tofilefullname+' '+fromfilepath)
+        subprocess.call('/home/wlan_dev/software/bigdata/api/start_hdfs_access.sh '+tofilefullname+' '+fromfilepath)
     else:
         time.sleep(600)
-        os.remove(filefullname)
+        os.remove(filedatepath+'.zip')
     #删除文件夹
-    shutil.rmtree(filepath)
+    if len(os.listdir(filedatepath)) == 0:
+        shutil.rmtree(filedatepath)
+    #删除文件夹
+    if len(os.listdir(filepath)) == 0:
+        shutil.rmtree(filepath)
 if __name__ == "__main__":
     logger=logging.getLogger('apscheduler.executors.default')
     # 指定logger输出格式
@@ -65,12 +76,12 @@ if __name__ == "__main__":
     scheduler = BackgroundScheduler()
     # 添加调度任务
     # 调度方法为timeTask,触发器选择定时，
-    scheduler.add_job(uploadfile, 'cron', minute='16,23')
+    scheduler.add_job(uploadfile, 'cron', hour='2')
     scheduler.start()
     try:
         while True:
             time.sleep(2)
-    except(KeyboardInterrupt, SystemExit):
-        print 'failed'
+    except Exception as ex:
+        logger.info(ex.message)
     
     

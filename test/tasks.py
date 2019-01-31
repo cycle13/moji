@@ -9,7 +9,7 @@ description:
 from celery import Celery
 from time import sleep
 #NAME必须和文件名相同，刚学做这个规定
-app = Celery('tasks')
+app = Celery('mos')
 app.config_from_object('celeryconfig')
 
 @app.task

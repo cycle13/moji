@@ -15,11 +15,13 @@ def functionabc(file,file1):
     print file,c,file1
 
 if __name__ == "__main__":
-    a=numpy.array([[1,2,3,4,5],[1,2,3,4,5]])
-    b=a[:,0:3]
-    c=a[:,3:]
-    print b
-    print c
+    pp=[[1,2,3],[1,2,3],[1,2,3]]
+
+
+    a = numpy.array(pp)
+
+    a[:, 0]
+    
     
 
     

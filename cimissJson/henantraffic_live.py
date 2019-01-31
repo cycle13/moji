@@ -14,8 +14,6 @@ from apscheduler.schedulers.background import BackgroundScheduler
 '''
 #根据国家观测站极大风速插值成阵风格点，并取河南的数据
 '''
-
-
 def lightingfromcimiss(odatetime, logger):
     try:
         lightingdataset = numpy.zeros((4500, 7000), dtype='float32')
@@ -127,20 +125,6 @@ def ReadCLDASncFile(ncpath, outpath, logpath):
         hourstr = str(odatetime.hour)
     pdatestring = datetime.datetime.strftime(odatetime, '%Y-%m-%d')
     ncfilepath = ncpath + yearstring + '/' + pdatestring + '/' + hourstr
-    # 日志模块
-    logging.basicConfig()
-    logger = logging.getLogger("apscheduler.executors.default")
-    logger.setLevel(logging.INFO)
-    formatter = logging.Formatter(
-        '%(name)-12s %(asctime)s %(levelname)-8s %(message)s',
-        '%a, %d %b %Y %H:%M:%S', )
-    logfile = os.path.join(logpath,
-                           'log' + pdatestring + hourstr + '_' + pdatetimess + '.log')
-    file_handler = logging.FileHandler(logfile)
-    file_handler.setFormatter(formatter)
-    stream_handler = logging.StreamHandler(sys.stderr)
-    logger.addHandler(file_handler)
-    logger.addHandler(stream_handler)
     for root, dirs, files in os.walk(ncfilepath):
         for file in files:
             if 'WIN' in file:
@@ -253,20 +237,8 @@ def ReadCLDASncFileWriteNC(ncpath, outpath, logpath, udt):
         hourstr = str(odatetime.hour)
     pdatestring = datetime.datetime.strftime(odatetime, '%Y-%m-%d')
     ncfilepath = ncpath + yearstring + '/' + pdatestring + '/' + hourstr
-    # 日志模块
-    logging.basicConfig()
-    logger = logging.getLogger("apscheduler.executors.default")
-    logger.setLevel(logging.INFO)
-    formatter = logging.Formatter(
-        '%(name)-12s %(asctime)s %(levelname)-8s %(message)s',
-        '%a, %d %b %Y %H:%M:%S', )
-    logfile = os.path.join(logpath,
-                           'log' + pdatestring + hourstr + '_' + pdatetimess + '.log')
-    file_handler = logging.FileHandler(logfile)
-    file_handler.setFormatter(formatter)
-    stream_handler = logging.StreamHandler(sys.stderr)
-    logger.addHandler(file_handler)
-    logger.addHandler(stream_handler)
+
+
     for root, dirs, files in os.walk(ncfilepath):
         for file in files:
             if 'WIN' in file:
@@ -384,20 +356,6 @@ def readcldasforlive(ncpath, outpath, logpath, udt):
         hourstr = str(odatetime.hour)
     pdatestring = datetime.datetime.strftime(odatetime, '%Y-%m-%d')
     ncfilepath = ncpath +'/'+ yearstring + '/' + pdatestring + '/' + hourstr
-    # 日志模块
-    logging.basicConfig()
-    logger = logging.getLogger("apscheduler.executors.default")
-    logger.setLevel(logging.INFO)
-    formatter = logging.Formatter(
-        '%(name)-12s %(asctime)s %(levelname)-8s %(message)s',
-        '%a, %d %b %Y %H:%M:%S', )
-    logfile = os.path.join(logpath,
-                           'ele' + pdatestring + hourstr + '_' + pdatetimess + '.log')
-    file_handler = logging.FileHandler(logfile)
-    file_handler.setFormatter(formatter)
-    stream_handler = logging.StreamHandler(sys.stderr)
-    logger.addHandler(file_handler)
-    logger.addHandler(stream_handler)
     print ncfilepath
     for root, dirs, files in os.walk(ncfilepath):
         for file in files:
@@ -439,11 +397,15 @@ def readcldasforlive(ncpath, outpath, logpath, udt):
                            'HNHSR_Meteo_ELE_LIVE_' + start + '_000.nc')
     if os.path.exists(outfile):
         if os.path.getsize(outfile) < 5 * 1024 * 1024:
-            os.remove(outfile)
+            try:
+                os.chmod(outfile, 0777)
+                os.remove(outfile)
+            except Exception,ex:
+                logger.info(ex.message)
         else:
             return None
     logger.info(outfile)
-    dataset = Dataset(outfile, 'w', format='NETCDF4')
+    dataset = Dataset(outfile, 'w', format='NETCDF4_CLASSIC')
     dataset.createDimension('lat', 600)
     dataset.createDimension('lon', 700)
     latitudes = dataset.createVariable('lats', numpy.float, ('lat'))
@@ -577,7 +539,11 @@ def readcimissfordisaster(ncpath, outpath, logpath, udt):
     outfile = os.path.join(outpath+'/'+yearstring + '/' + pdatestring,'HNHSR_Meteo_DIS_LIVE_' + start + '_000.nc')
     if os.path.exists(outfile):
         if os.path.getsize(outfile) < 1 * 1024 * 1024:
-            os.remove(outfile)
+            try:
+                os.chmod(outfile, 0777)
+                os.remove(outfile)
+            except Exception,ex:
+                logger.info(ex.message)
         else:
             return None
     dataset = Dataset(outfile, 'w', format='NETCDF4_CLASSIC')
@@ -633,9 +599,25 @@ def readcimissfordisaster(ncpath, outpath, logpath, udt):
     del prenc
     
 if __name__ == "__main__":
+    # 日志模块
+    logpath = '/home/wlan_dev/log'
+    logging.basicConfig()
+    logger = logging.getLogger("apscheduler.executors.default")
+    logger.setLevel(logging.INFO)
+    formatter = logging.Formatter(
+        '%(name)-12s %(asctime)s %(levelname)-8s %(message)s',
+        '%a, %d %b %Y %H:%M:%S', )
+    logfile = os.path.join(logpath,'ele.log')
+    file_handler = logging.FileHandler(logfile)
+    file_handler.setFormatter(formatter)
+    stream_handler = logging.StreamHandler(sys.stderr)
+    hdlr = logging.handlers.TimedRotatingFileHandler(logfile, when='D',
+                                                     interval=1,
+                                                     backupCount=40)
+    logger.addHandler(file_handler)
+    logger.addHandler(stream_handler)
     ncpath = '/home/wlan_dev/cldas'
     outpath = '/home/wlan_dev/henan'
-    logpath = '/home/wlan_dev/log'
     # ncpath = '/Users/yetao.lu/Downloads/tmp'
     # outpath = '/Users/yetao.lu/Downloads/tmp/SSRA'
     # logpath = '/Users/yetao.lu/Downloads/tmp/SSRA'
@@ -644,7 +626,7 @@ if __name__ == "__main__":
     utc02 = -10
     utc03 = -11
     utc04 = -22
-    #readcldasforlive(ncpath,outpath,logpath,utc03)
+    readcldasforlive(ncpath,outpath,logpath,utc01)
     # 创建后台执行的schedulers
     scheduler = BackgroundScheduler()
     # 添加调度任务
@@ -652,15 +634,15 @@ if __name__ == "__main__":
     scheduler.add_job(readcldasforlive,'cron',minute='49',max_instances=1,args=(ncpath, outpath, logpath, utc))
     scheduler.add_job(readcimissfordisaster, 'cron', minute='49',max_instances=1,
                       args=(ncpath, outpath, logpath, utc))
-    scheduler.add_job(readcldasforlive,'cron',minute='50',max_instances=1,args=(ncpath, outpath, logpath, utc01))
-    scheduler.add_job(readcimissfordisaster, 'cron', minute='50',max_instances=1,
-                      args=(ncpath, outpath, logpath, utc01))
+    # scheduler.add_job(readcldasforlive,'cron',minute='50',max_instances=1,args=(ncpath, outpath, logpath, utc01))
+    # scheduler.add_job(readcimissfordisaster, 'cron', minute='50',max_instances=1,
+    #                   args=(ncpath, outpath, logpath, utc01))
     scheduler.add_job(readcldasforlive,'cron',minute='51',max_instances=1,args=(ncpath, outpath, logpath, utc02))
     scheduler.add_job(readcimissfordisaster, 'cron', minute='51',max_instances=1,
                       args=(ncpath, outpath, logpath, utc02))
-    scheduler.add_job(readcldasforlive,'cron',minute='52',max_instances=1,args=(ncpath, outpath, logpath, utc03))
-    scheduler.add_job(readcimissfordisaster, 'cron', minute='52',max_instances=1,
-                      args=(ncpath, outpath, logpath, utc03))
+    # scheduler.add_job(readcldasforlive,'cron',minute='52',max_instances=1,args=(ncpath, outpath, logpath, utc03))
+    # scheduler.add_job(readcimissfordisaster, 'cron', minute='52',max_instances=1,
+    #                   args=(ncpath, outpath, logpath, utc03))
     scheduler.add_job(readcldasforlive,'cron',minute='53',max_instances=1,args=(ncpath, outpath, logpath, utc04))
     scheduler.add_job(readcimissfordisaster, 'cron', minute='53',max_instances=1,
                       args=(ncpath, outpath, logpath, utc04))

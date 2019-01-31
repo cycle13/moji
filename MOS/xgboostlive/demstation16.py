@@ -4,7 +4,7 @@
 """
 author:     yetao.lu
 date:       2018/7/9
-description:
+description:这是0.125的EC数据的高程
 """
 import os,numpy
 from osgeo import gdal

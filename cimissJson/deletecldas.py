@@ -6,40 +6,44 @@ author:     yetao.lu
 date:       2018/6/26
 description:
 """
-import os,time,datetime,shutil ,logging,sys
+import os,time,datetime,shutil ,logging,sys,subprocess
 from apscheduler.schedulers.background import BackgroundScheduler
 def deletecldasdata(filepath,flagtime):
-    for root,dirs,files in os.walk(filepath):
-        for file in files:
-            filefullname=os.path.join(root,file)
-            filetime=time.ctime(os.path.getctime(filefullname))
-            filetimesecond=os.path.getctime(filefullname)
-            print filetime,type(filetime)
-            ModifiedTime=time.localtime(filetimesecond)
-            y = time.strftime('%Y', ModifiedTime)
-            m = time.strftime('%m', ModifiedTime)
-            d = time.strftime('%d', ModifiedTime)
-            H = time.strftime('%H', ModifiedTime)
-            M = time.strftime('%M', ModifiedTime)
-            d2 = datetime.datetime(int(y), int(m), int(d), int(H), int(M))
-            print d2
-            if d2<flagtime:
-                os.remove(filefullname)
+    now=datetime.datetime.now()
+    yearstr=str(now.year)
+    #print yearstr
+    filepathyear=filepath+'/'+yearstr
+    flagtime=now+datetime.timedelta(days=-1)
+    for root,dirs,files in os.walk(filepathyear):
         for dir in dirs:
             dirpath=os.path.join(root,dir)
-            filetimesecond = os.path.getctime(dirpath)
-            print filetime, type(filetime)
-            ModifiedTime = time.localtime(filetimesecond)
-            y = time.strftime('%Y', ModifiedTime)
-            m = time.strftime('%m', ModifiedTime)
-            d = time.strftime('%d', ModifiedTime)
-            H = time.strftime('%H', ModifiedTime)
-            M = time.strftime('%M', ModifiedTime)
-            d2 = datetime.datetime(int(y), int(m), int(d), int(H), int(M))
-            print d2
-            if d2 < flagtime:
-                #os.remove(filefullname)
+            if len(os.listdir(dirpath)) == 0:
                 shutil.rmtree(dirpath)
+                if os.path.exists(dirpath):
+                    logger.info(dirpath + "文件夹删除成功")
+                else:
+                    logger.info(dirpath + '文件夹删除失败')
+            if len(str(dir))>5:
+                dirpath=os.path.join(root,dir)
+                pathtime=datetime.datetime.strptime(dir,'%Y-%m-%d')
+                print pathtime,flagtime
+                if pathtime<flagtime:
+                    for croot,cdirs,cfiles in os.walk(dirpath):
+                        for cdir in cdirs:
+                            cdirpath=os.path.join(croot,cdir)
+                            #判断文件夹是否为空
+                            if len(os.listdir(cdirpath)) == 0:
+                                shutil.rmtree(cdirpath)
+                                if os.path.exists(cdirpath):
+                                    logger.info(cdirpath+"文件夹删除成功")
+                                else:
+                                    logger.info(cdirpath+'文件夹删除失败')
+                            else:
+                                for droot,ddirs,dfiles in os.walk(cdir):
+                                    for dfile in dfiles:
+                                        dfilename=os.path.join(droot,dfile)
+                                        print dfilename
+                                        subprocess.call('sudo rm -rf '+dfilename)
 if __name__ == "__main__":
     now=datetime.datetime.now()
     nowstring=datetime.datetime.strftime(now,'%Y%m%d%H')
@@ -48,29 +52,28 @@ if __name__ == "__main__":
     # 指定logger输出格式
     formatter = logging.Formatter('%(asctime)s %(levelname)-8s: %(message)s')
     # 文件日志learning
-    logfile='/home/wlan_dev/log/delclads'+nowstring+'.log'
+    logfile='/moji/meteo/cluster/data/log/delclads'+nowstring+'.log'
     #logfile='/Users/yetao.lu/Desktop/mos/temp/loging.log'
     file_handler = logging.FileHandler(logfile)
     file_handler.setFormatter(formatter)  # 可以通过setFormatter指定输出格式
     # 控制台日志
     console_handler = logging.StreamHandler(sys.stdout)
     console_handler.formatter = formatter  # 也可以直接给formatter赋值
-
     # 为logger添加的日志处理器
     logger.addHandler(file_handler)
     logger.addHandler(console_handler)
-
     # 指定日志的最低输出级别，默认为WARN级别
     logger.setLevel(logging.INFO)
     now=datetime.datetime.now()
-    flagtime=now+datetime.timedelta(days=-3)
-    #filepath='/Users/yetao.lu/Downloads/eccodes-2.3.0-Source'
-    filepath='/moji/meteo/cluster/data/CLDAS/2018/'
+    flagtime=now+datetime.timedelta(days=-1)
+    #filepath='/Users/yetao.lu/scala'
+    filepath='/moji/meteo/cluster/data/CLDAS'
     deletecldasdata(filepath,flagtime)
     # 创建后台执行的schedulers
     scheduler = BackgroundScheduler()
     # 添加调度任务
     # 调度方法为timeTask,触发器选择定时，
+    #scheduler.add_job(deletecldasdata, 'cron', minute='*/2',args=(filepath, flagtime))
     scheduler.add_job(deletecldasdata,'cron',hour='0,12',args=(filepath,flagtime))
     try:
         scheduler.start()

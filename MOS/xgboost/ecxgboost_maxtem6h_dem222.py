@@ -868,36 +868,32 @@ if __name__ == '__main__':
     # outpath = '/Users/yetao.lu/Desktop/mos/anonymous'
     outpath = '/home/wlan_dev/model'
     ll = 1
-    pool=multiprocessing.Pool(processes=2)
-    for ll in range(1,41,1):
-        stationdict = {}
-        # 站点列表数据
-        stationlist = []
-        # csvfile = '/Users/yetao.lu/Desktop/mos/stations.csv'
-        csvfile = '/home/wlan_dev/stations.csv'
-        fileread = open(csvfile, 'r')
-        firstline = fileread.readline()
-        while True:
-            line = fileread.readline()
-            perlist = line.split(',')
-            if len(perlist) >= 4:
-                stationlist.append(perlist)
-            if not line or line == '':
-                break
-        # print stationlist
-        # 处理站点6小时最高气温、最低气温实况数据
-        # maxmin6hcsv = '/Users/yetao.lu/Desktop/mos/data/temmaxmin6h'
-        maxmin6hcsv = '/home/wlan_dev/temmaxmin6h'
-        stationdict = temp6hmaxminTodict(maxmin6hcsv)
-        # print 'dict', len(stationdict)
-        # allpath = '/Users/yetao.lu/Desktop/mos/testdata'
-        allpath = '/mnt/data/MOS/'
-        # dempath = '/Users/yetao.lu/Desktop/mos/tif'
-        dempath = '/mnt/data/tif'
-        #modelprocess(stationdict, stationlist, ll, allpath, dempath)
-        pool.apply_async(modelprocess,args=(stationdict, stationlist, ll, allpath, dempath))
-    pool.close()
-    pool.join()
+
+    stationdict = {}
+    # 站点列表数据
+    stationlist = []
+    # csvfile = '/Users/yetao.lu/Desktop/mos/stations.csv'
+    csvfile = '/home/wlan_dev/stations.csv'
+    fileread = open(csvfile, 'r')
+    firstline = fileread.readline()
+    while True:
+        line = fileread.readline()
+        perlist = line.split(',')
+        if len(perlist) >= 4:
+            stationlist.append(perlist)
+        if not line or line == '':
+            break
+    # print stationlist
+    # 处理站点6小时最高气温、最低气温实况数据
+    # maxmin6hcsv = '/Users/yetao.lu/Desktop/mos/data/temmaxmin6h'
+    maxmin6hcsv = '/home/wlan_dev/temmaxmin6h'
+    stationdict = temp6hmaxminTodict(maxmin6hcsv)
+    # print 'dict', len(stationdict)
+    # allpath = '/Users/yetao.lu/Desktop/mos/testdata'
+    allpath = '/mnt/data/MOS/'
+    # dempath = '/Users/yetao.lu/Desktop/mos/tif'
+    dempath = '/mnt/data/tif'
+    modelprocess(stationdict, stationlist, ll, allpath, dempath)
     endtime = datetime.datetime.now()
     # print len(dict)
     print(endtime - starttime).seconds

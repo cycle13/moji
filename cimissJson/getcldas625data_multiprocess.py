@@ -25,7 +25,7 @@ def Readfeaturefile(featrue,dict,filename,odatetime,outpath):
     file01 = os.path.join(outpath + '/' + yearstr + '/' + pdate+'/'+hourstr, filename)
     if not os.path.exists(file01):
         fileurl = dict['FILE_URL']
-        #fileurl=str.replace(str(fileurl),'http://ftp.data.cma.cn:8000/dlcdc/','http://cdcfileprivate.oss-cn-beijing-internal.aliyuncs.com/')
+        fileurl=str.replace(str(fileurl),'http://ftp.data.cma.cn:8000/dlcdc/','http://cdcfileprivate.oss-cn-beijing-internal.aliyuncs.com/')
         print fileurl
         #fileurl='http://cdcfileprivate.oss-cn-beijing-internal.aliyuncs.com/space/HRCLDAS/sod.F.0042.0001.S001/Z_NAFP_C_BABJ_20180515031247_P_HRCLDAS_RT_CHN_0P01_HOR-SSRA-2018051503.nc.tmp?Expires=1527049241&OSSAccessKeyId=CcULE6lAfEbIFtKD&Signature=Nh8PlSuAtqLLu%2BLyv8btnyIN8uk%3D&DataCode=NAFP_HRCLDAS_RT_NC&UserId=mjtq_mjtqmete_user'
         fileread = urllib2.urlopen(fileurl)
@@ -51,7 +51,7 @@ def getcldasdata(outpath,logger):
     pool=multiprocessing.Pool(processes=9)
     for dict in dataset:
         filename=dict['FILE_NAME']
-        featurelist=['TMP','SHU','WIN','PRE']
+        featurelist = ['SSRA', 'TMP', 'SHU', 'PRS', 'WIN', 'PRE']
         for i in featurelist:
             if i in filename:
                 # start=datetime.datetime.now()
@@ -81,7 +81,7 @@ def getcldasdataNext(outpath,logger):
     pool=multiprocessing.Pool(processes=9)
     for dict in dataset:
         filename=dict['FILE_NAME']
-        featurelist=['TMP','SHU','WIN','PRE']
+        featurelist = ['SSRA', 'TMP', 'SHU', 'PRS', 'WIN', 'PRE']
         for i in featurelist:
             if i in filename:
                 # start=datetime.datetime.now()
@@ -110,7 +110,7 @@ def getcldasdataNext01(outpath,logger,utc01):
     pool=multiprocessing.Pool(processes=9)
     for dict in dataset:
         filename=dict['FILE_NAME']
-        featurelist=['TMP','SHU','WIN','PRE']
+        featurelist = ['SSRA', 'TMP', 'SHU', 'PRS', 'WIN', 'PRE']
         for i in featurelist:
             if i in filename:
                 # start=datetime.datetime.now()
@@ -123,8 +123,8 @@ def getcldasdataNext01(outpath,logger,utc01):
     pool.join()
 if __name__ == "__main__":
     starttime=datetime.datetime.now()
-    outpath='/home/wlan_dev/cldas625'
-    logpath='/home/wlan_dev/log625'
+    outpath='/moji/meteo/cluster/data/CLDAS625'
+    logpath='/moji/meteo/cluster/data/log'
     utc=-9
     utc01=-10
     utc02=-11
@@ -144,14 +144,14 @@ if __name__ == "__main__":
     scheduler = BackgroundScheduler()
     # 添加调度任务
     # 调度方法为timeTask,触发器选择定时，
-    scheduler.add_job(getcldasdata, 'cron', minute='45,50,55',args=(outpath, logger))
-    scheduler.add_job(getcldasdataNext01, 'cron', minute='45',
+    scheduler.add_job(getcldasdata, 'cron', minute='55',args=(outpath, logger))
+    scheduler.add_job(getcldasdataNext01, 'cron', minute='55',
                       args=(outpath, logger, utc))
-    scheduler.add_job(getcldasdataNext01,'cron',minute='45',
+    scheduler.add_job(getcldasdataNext01,'cron',minute='48',
                       args=(outpath,logger,utc01))
-    scheduler.add_job(getcldasdataNext01, 'cron', minute='45',
+    scheduler.add_job(getcldasdataNext01, 'cron', minute='48',
                       args=(outpath, logger, utc02))
-    scheduler.add_job(getcldasdataNext01, 'cron', minute='45',
+    scheduler.add_job(getcldasdataNext01, 'cron', minute='40',
                       args=(outpath, logger, utc03))
     scheduler.start()
     try:

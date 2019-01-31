@@ -512,44 +512,45 @@ def demdatefromcsvTodict(demcsv):
 def calculateStationVariable(hours,tempvariablelist, maxtempvariablelist,
                              mintempvariablelist, rainvariablelist, inputfile,previouspath,
                              stationlist, csvfile, demcsv):
+    logger.info(inputfile[-4:]+'****'+previouspath[-4:])
     if inputfile[-4:] == 'grib' and previouspath[-4:]=='grib':
-        #前一个时次只取降水
+        #前一个时次只取降水，其他数据不一定有例如6小时最高
         pregrbs=pygrib.open(previouspath)
-        pregrb=pregrbs.select(name='Total precipitation')
+        pregrb=pregrbs.select(name='Total precipitation',level=0)
         pretpArray=pregrb[0].values
-        pregrb=pregrbs.select(name='Convective precipitation')
+        pregrb=pregrbs.select(name='Convective precipitation',level=0)
         precpArray=pregrb[0].values
-        
         grbs = pygrib.open(inputfile)
-        # grbs.seek(0)
-        # for grb in grbs:
-        #     print grb
+        logger.info(previouspath+inputfile)
+        grbs.seek(0)
+        for grb in grbs:
+            print grb
         # 把数据矩阵都拿出来
         grb = grbs.select(
-            name='Maximum temperature at 2 metres in the last 6 hours')
+            name='Maximum temperature at 2 metres in the last 6 hours',level=0)
         maxtempArray = grb[0].values
         grb = grbs.select(
-            name='Minimum temperature at 2 metres in the last 6 hours')
+            name='Minimum temperature at 2 metres in the last 6 hours',level=0)
         mintempArray = grb[0].values
-        grb = grbs.select(name='2 metre temperature')
+        grb = grbs.select(name='2 metre temperature',level=0)
         tempArray = grb[0].values
-        grb = grbs.select(name='2 metre dewpoint temperature')
+        grb = grbs.select(name='2 metre dewpoint temperature',level=0)
         dewpointArray = grb[0].values
-        grb = grbs.select(name='10 metre U wind component')
+        grb = grbs.select(name='10 metre U wind component',level=0)
         u10Array = grb[0].values
-        grb = grbs.select(name='10 metre V wind component')
+        grb = grbs.select(name='10 metre V wind component',level=0)
         v10Array = grb[0].values
-        grb = grbs.select(name='Total cloud cover')
+        grb = grbs.select(name='Total cloud cover',level=0)
         tccArray = grb[0].values
-        grb = grbs.select(name='Low cloud cover')
+        grb = grbs.select(name='Low cloud cover',level=0)
         lccArray = grb[0].values
         grb = grbs.select(name='Relative humidity', level=500)
         rh500Array = grb[0].values
         grb = grbs.select(name='Relative humidity', level=850)
         rh850Array = grb[0].values
-        grb = grbs.select(name='Total precipitation')
+        grb = grbs.select(name='Total precipitation',level=0)
         tpArray = grb[0].values
-        grb = grbs.select(name='Convective precipitation')
+        grb = grbs.select(name='Convective precipitation',level=0)
         cpArray = grb[0].values
         grb = grbs.select(name='U component of wind', level=500)
         u500Array = grb[0].values
@@ -559,8 +560,10 @@ def calculateStationVariable(hours,tempvariablelist, maxtempvariablelist,
         u850Array = grb[0].values
         grb = grbs.select(name='V component of wind', level=850)
         v850Array = grb[0].values
-        grb = grbs.select(name='Geopotential')
+        grb = grbs.select(name='Geopotential',level=0)
         geoArray = grb[0].values
+        logger.info('看是否含有所有的要素因子')
+        #遍历站点获取对应的数组
         idlist = []
         fileread = open(csvfile, 'r')
         fileread.readline()
@@ -733,36 +736,36 @@ def calculateStationVariable(hours,tempvariablelist, maxtempvariablelist,
 def calculateStationVariable2(hours,tempvariablelist, rainvariablelist, inputfile,previouspath,
                               stationlist, csvfile, demcsv):
     if inputfile[-4:] == 'grib' and previouspath[-4:]=='grib':
-        #前一个时次只取降水
+        #前一个时次只取降水，
         pregrbs=pygrib.open(previouspath)
-        pregrb=pregrbs.select(name='Total precipitation')
+        pregrb=pregrbs.select(name='Total precipitation',level=0)
         pretpArray=pregrb[0].values
-        pregrb=pregrbs.select(name='Convective precipitation')
+        pregrb=pregrbs.select(name='Convective precipitation',level=0)
         precpArray=pregrb[0].values
         grbs = pygrib.open(inputfile)
-        # grbs.seek(0)
-        # for grb in grbs:
-        #     print grb
+        grbs.seek(0)
+        for grb in grbs:
+            print grb
         # 把数据矩阵都拿出来
-        grb = grbs.select(name='2 metre temperature')
+        grb = grbs.select(name='2 metre temperature',level=0)
         tempArray = grb[0].values
-        grb = grbs.select(name='2 metre dewpoint temperature')
+        grb = grbs.select(name='2 metre dewpoint temperature',level=0)
         dewpointArray = grb[0].values
-        grb = grbs.select(name='10 metre U wind component')
+        grb = grbs.select(name='10 metre U wind component',level=0)
         u10Array = grb[0].values
-        grb = grbs.select(name='10 metre V wind component')
+        grb = grbs.select(name='10 metre V wind component',level=0)
         v10Array = grb[0].values
-        grb = grbs.select(name='Total cloud cover')
+        grb = grbs.select(name='Total cloud cover',level=0)
         tccArray = grb[0].values
-        grb = grbs.select(name='Low cloud cover')
+        grb = grbs.select(name='Low cloud cover',level=0)
         lccArray = grb[0].values
         grb = grbs.select(name='Relative humidity', level=500)
         rh500Array = grb[0].values
         grb = grbs.select(name='Relative humidity', level=850)
         rh850Array = grb[0].values
-        grb = grbs.select(name='Total precipitation')
+        grb = grbs.select(name='Total precipitation',level=0)
         tpArray = grb[0].values
-        grb = grbs.select(name='Convective precipitation')
+        grb = grbs.select(name='Convective precipitation',level=0)
         cpArray = grb[0].values
         grb = grbs.select(name='U component of wind', level=500)
         u500Array = grb[0].values
@@ -772,7 +775,7 @@ def calculateStationVariable2(hours,tempvariablelist, rainvariablelist, inputfil
         u850Array = grb[0].values
         grb = grbs.select(name='V component of wind', level=850)
         v850Array = grb[0].values
-        grb = grbs.select(name='Geopotential')
+        grb = grbs.select(name='Geopotential',level=0)
         geoArray = grb[0].values
         idlist = []
         fileread = open(csvfile, 'r')
@@ -952,6 +955,7 @@ def Predict(hours,outfilename,previouspath, modelname, maxmodel, minmodel, rainm
         mintempvariablelist = []
         rainvariablelist = []
         stationlist = []
+        logger.info(str(hours)+'文件：'+previouspath+'-----'+outfilename)
         calculateStationVariable(hours,tempvariablelist, maxtempvariablelist,
                                  mintempvariablelist, rainvariablelist,
                                  outfilename,previouspath,stationlist, csvfile, demcsv)
@@ -1182,7 +1186,6 @@ def Predict(hours,outfilename,previouspath, modelname, maxmodel, minmodel, rainm
         db.commit()
         db.close()
         # csvfile.close()
-        os.remove(outfilename)
         logger.info(outfilename)
     except Exception as e:
         logger.info(e.message)
@@ -1274,13 +1277,7 @@ def Predict2(hours,outfilename,previouspath, modelname, rainmodelfile, premodelf
             # 'eval_metric': 'auc'
             'scale_pos_weight': 1
         }
-        #print 'hello'
-        #rainvariablelist=list(rainvariablelist)
         rainvariablelist=numpy.array(rainvariablelist)
-        # print '===========\n'
-        # print rainvariablelist
-        # print rainvariablelist.shape
-        # print type(rainvariablelist)
         rainbst = xgboost.Booster(params_rain)
         rainbst.load_model(rainmodelfile)
         rainscaler = joblib.load(rainscalerfile)
@@ -1381,7 +1378,6 @@ def Predict2(hours,outfilename,previouspath, modelname, rainmodelfile, premodelf
         db.commit()
         db.close()
         # csvfile.close()
-        os.remove(outfilename)
         logger.info(outfilename)
     except Exception, e:
         logger.info(e.message)
@@ -1413,23 +1409,23 @@ if __name__ == "__main__":
     # csvfile = '/Users/yetao.lu/Desktop/mos/stations.csv'
     # demcsv = '/Users/yetao.lu/Desktop/mos/dem.csv'
     # 遍历2867个站点
-    path = '/home/wlan_dev/tmp'
+    path = '/home/wlan_dev/tmp/12'
     outpath = '/home/wlan_dev/result'
     csvfile = '/home/wlan_dev/stations.csv'
     demcsv = '/mnt/data/dem.csv'
     bz2list = []
     rootpath = ''
-    pool=multiprocessing.Pool(processes=8)
     for root, dirs, files in os.walk(path):
         rootpath = root
         for file in files:
-            if file[-4:] == '.bz2' and file[:3] == 'D1D':
+            if file[-5:] == '.grib' and file[:3] == 'D1D':
                 filename = os.path.join(root, file)
                 bz2list.append(file)
     bz2list001 = sorted(bz2list)
-    print bz2list001
+    logger.info(bz2list001)
+    pool=multiprocessing.Pool(processes=8)
     for i in range(len(bz2list001)):
-        file = bz2list[i]
+        file = bz2list001[i]
         bz2file = os.path.join(root, file)
         # 降水需要取前一个时次的文件
         start = file[3:9]
@@ -1462,38 +1458,11 @@ if __name__ == "__main__":
         else:
             previousfile = bz2list001[i]
         # 当前文件
-        newfile = file[:-4] + '.grib'
-        newfilepath = os.path.join(rootpath, newfile)
+        newfilepath = os.path.join(rootpath, file)
         # 上一个文件
-        previousgribfile = previousfile[:-4] + '.grib'
+        previousgribfile = previousfile
         previouspath = os.path.join(rootpath, previousgribfile)
-        logger.info(newfilepath+','+previouspath)
-        if not os.path.exists(newfilepath) :
-            a = bz2.BZ2File(bz2file, 'rb')
-            b = open(newfilepath, 'wb')
-            b.write(a.read())
-            a.close()
-            b.close()
-        elif os.path.getsize(newfilepath)<100000:
-            os.remove(newfilepath)
-            a = bz2.BZ2File(bz2file, 'rb')
-            b = open(newfilepath, 'wb')
-            b.write(a.read())
-            a.close()
-            b.close()
-        if not os.path.exists(previouspath) :
-            a = bz2.BZ2File(bz2file, 'rb')
-            b = open(previouspath, 'wb')
-            b.write(a.read())
-            a.close()
-            b.close()
-        elif os.path.getsize(previouspath)<100000:
-            os.remove(previouspath)
-            a = bz2.BZ2File(bz2file, 'rb')
-            b = open(previouspath, 'wb')
-            b.write(a.read())
-            a.close()
-            b.close()
+        logger.info('处理的文件：'+newfilepath+','+previouspath)
         #filename的路径，这里是grib数据
         filename = newfilepath
         modelname = '/mnt/data/demtemp/tmodel' + str(id) + '.model'
@@ -1509,23 +1478,23 @@ if __name__ == "__main__":
         # rainscalerfile = '/Users/yetao.lu/Desktop/mos/model/xrain/x_rainscale' + str(id) + '.save'
         # prescalerfile = '/Users/yetao.lu/Desktop/mos/model/xrain/x_prescale' + str(id) + '.save'
         # 6小时最高气温和最低气温ID获取，判断数据里有没有6小时最高最低气温要素
+        #分开的主要原因是两个文件含有不同要素的文件
         if hours % 6 == 0 and hours / 6 <> 0:
             # 初始场数据中也没有6小时预报
             j = hours / 6
-            j = j - 1
             logger.info('j=' + str(j) + 'id=' + str(id) + 'hours=' + str(hours))
-            maxmodel = '/mnt/data/demmaxmin/dem_maxtemp' + str(
-                j) + '.model'
-            minmodel = '/mnt/data/demmaxmin/dem_mintemp' + str(
-                j) + '.model'
-            maxscalerfile = '/mnt/data/demmaxmin/dem_maxscale' + str(
-                j) + '.save'
-            minscalerfile = '/mnt/data/demmaxmin/dem_minscale' + str(
-                j) + '.save'
-            # maxmodel = '/Users/yetao.lu/Desktop/mos/model/demmaxmin/demmax_temp0.model'
-            # minmodel = '/Users/yetao.lu/Desktop/mos/model/demmaxmin/demmin_temp0.model'
-            # maxscalerfile = '/Users/yetao.lu/Desktop/mos/model/demmaxmin/demscaler_max0.save'
-            # minscalerfile = '/Users/yetao.lu/Desktop/mos/model/demmaxmin/demscaler_min0.save'
+            # maxmodel = '/mnt/data/demmaxmin/dem_maxtemp' + str(
+            #     j) + '.model'
+            # minmodel = '/mnt/data/demmaxmin/dem_mintemp' + str(
+            #     j) + '.model'
+            # maxscalerfile = '/mnt/data/demmaxmin/dem_maxscale' + str(
+            #     j) + '.save'
+            # minscalerfile = '/mnt/data/demmaxmin/dem_minscale' + str(
+            #     j) + '.save'
+            maxmodel = '/Users/yetao.lu/Desktop/mos/model/demmaxmin/demmax_temp0.model'
+            minmodel = '/Users/yetao.lu/Desktop/mos/model/demmaxmin/demmin_temp0.model'
+            maxscalerfile = '/Users/yetao.lu/Desktop/mos/model/demmaxmin/demscaler_max0.save'
+            minscalerfile = '/Users/yetao.lu/Desktop/mos/model/demmaxmin/demscaler_min0.save'
             # logger.info(filename)
             # Predict(hours,filename,previouspath, modelname, maxmodel, minmodel,
             #         rainmodelfile, premodelfile, tempscalerfile,

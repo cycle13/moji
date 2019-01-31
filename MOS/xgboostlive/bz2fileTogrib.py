@@ -111,7 +111,7 @@ if __name__ == "__main__":
     logger.addHandler(file_handler)
     logger.addHandler(stream_handler)
     oldfilepath='/opt/meteo/cluster/data/ecmwf/orig'
-    dirpath='/mnt/data/ecdata'
+    dirpath='/moji/ecdata'
     # 创建后台执行的schedulers
     scheduler = BackgroundScheduler()
     # 添加调度任务

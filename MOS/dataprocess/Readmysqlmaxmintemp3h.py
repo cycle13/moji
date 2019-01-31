@@ -10,7 +10,7 @@ import MySQLdb,datetime
 if __name__ == "__main__":
     firstdate = '20150601 00:00:00'
     pdatetime = datetime.datetime.strptime(firstdate, '%Y%m%d %H:%M:%S')
-    db = MySQLdb.connect('192.168.1.84', 'admin', 'moji_China_123', 'moge')
+    db = MySQLdb.connect('192.168.10.84', 'admin', 'moji_China_123', 'moge')
     cursor = db.cursor()
     filepath='/Users/yetao.lu/Desktop/mos/data/temmaxmin/h3_tempmaxmin2015.csv'
     filewrite=open(filepath,'w')

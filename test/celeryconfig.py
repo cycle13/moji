@@ -20,5 +20,6 @@ beat_schedule={
         'schedule':timedelta(seconds=30),
         'args':(16,16)
     },
+
 }
 

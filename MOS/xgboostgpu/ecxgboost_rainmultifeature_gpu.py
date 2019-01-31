@@ -140,8 +140,7 @@ def GetStationsAndOnetimesFromEC(i, sfc_varinames,sfc_varinames1, sfc_file,pl_va
         trainclasfier=0
         # 根据文件名来建立索引获取实况数据气温的值
         strarray = inputfile.split('_')
-        odatetime = datetime.datetime.strptime((strarray[1] + strarray[2][:2]),
-                                               '%Y%m%d%H')
+        odatetime = datetime.datetime.strptime((strarray[1] + strarray[2][:2]),'%Y%m%d%H')
         if i <= 48:
             fdatetime = odatetime + datetime.timedelta(hours=i * 3)
         else:
@@ -149,8 +148,7 @@ def GetStationsAndOnetimesFromEC(i, sfc_varinames,sfc_varinames1, sfc_file,pl_va
                 hours=48 * 3 + (i - 48) * 6)
         fdateStr = datetime.datetime.strftime(fdatetime, '%Y%m%d%H%M%S')
         # 这里只能是起报时间加预报时效，不能用预报时间。因预报时间有重复
-        dictid = stationlist[j][0] + '_' + strarray[1] + strarray[2][
-        :2] + '_' + str(i)
+        dictid = stationlist[j][0] + '_' + strarray[1] + strarray[2][:2] + '_' + str(i)
         # 根据站号+实况数据的索引来获取实况数据
         kid = stationlist[j][0] + '_' + fdateStr
         trainlebel = stationdict.get(kid)
@@ -453,7 +451,7 @@ if __name__ == '__main__':
         precsv = '/home/wlan_dev/pre6h'
         stationdict = pre6hTodict(precsv)
     #allpath = '/Users/yetao.lu/Documents/testdata/'
-    allpath = '/moji/meteo/cluster/data/MOS/'
+    allpath = '/mnt/data/MOS/2015/06'
     modelprocess(stationdict,stationlist,ll,allpath)
     endtime = datetime.datetime.now()
     # print len(dict)

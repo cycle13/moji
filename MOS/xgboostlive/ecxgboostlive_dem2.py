@@ -1181,7 +1181,7 @@ def Predict(hours,outfilename,previouspath, modelname, maxmodel, minmodel, rainm
         db.commit()
         db.close()
         # csvfile.close()
-        os.remove(outfilename)
+        #os.remove(outfilename)
         logger.info(outfilename)
     except Exception as e:
         logger.info(e.message)
@@ -1373,7 +1373,7 @@ def Predict2(hours,outfilename,previouspath, modelname, rainmodelfile, premodelf
         db.commit()
         db.close()
         # csvfile.close()
-        os.remove(outfilename)
+        #os.remove(outfilename)
         logger.info(outfilename)
     except Exception, e:
         logger.info(e.message)
@@ -1405,13 +1405,12 @@ if __name__ == "__main__":
     # csvfile = '/Users/yetao.lu/Desktop/mos/stations.csv'
     # demcsv = '/Users/yetao.lu/Desktop/mos/dem.csv'
     # 遍历2867个站点
-    path = '/home/wlan_dev/tmp/12'
+    path = '/home/wlan_dev/tmp/12/04'
     outpath = '/home/wlan_dev/result'
     csvfile = '/home/wlan_dev/stations.csv'
     demcsv = '/mnt/data/dem.csv'
     bz2list = []
     rootpath = ''
-    pool=multiprocessing.Pool(processes=8)
     for root, dirs, files in os.walk(path):
         rootpath = root
         for file in files:
@@ -1419,7 +1418,7 @@ if __name__ == "__main__":
                 filename = os.path.join(root, file)
                 bz2list.append(file)
     bz2list001 = sorted(bz2list)
-    print bz2list001
+    pool=multiprocessing.Pool(processes=8)
     for i in range(len(bz2list001)):
         file = bz2list[i]
         bz2file = os.path.join(root, file)
@@ -1438,7 +1437,6 @@ if __name__ == "__main__":
         d = (endtime - starttime).days
         f = (endtime - starttime).seconds / 3600
         hours = (d * 24 + (endtime - starttime).seconds / 3600)
-        logger.info('hours=' + str(hours))
         # 气温和降水的ID获取,把0排除掉了,如果hours<=3则降水不用减前一个时次的
         #历史数据是144个小时是逐3小时预报，线上数据只有120小时是逐3小时，但是不影响取模型数据
         if hours <=144 and hours > 0:
@@ -1447,11 +1445,11 @@ if __name__ == "__main__":
             id = 48 + (hours - 144) / 6
         elif hours == 0:
             continue
+        logger.info('hours=' + str(hours)+'id='+str(id))
         # 判断时间，取前一个时次文件
         previousfile = ''
         if i > 0:
             previousfile = bz2list001[i - 1]
-            #print 'previousfile======'+previousfile
         else:
             previousfile = bz2list001[i]
         # 当前文件
@@ -1460,8 +1458,8 @@ if __name__ == "__main__":
         # 上一个文件
         previousgribfile = previousfile[:-4] + '.grib'
         previouspath = os.path.join(rootpath, previousgribfile)
-        logger.info(newfilepath+','+previouspath)
-        if not os.path.exists(newfilepath) :
+        logger.info('当前文件和前一时次文件：'+newfilepath+','+previouspath)
+        if not os.path.exists(newfilepath):
             a = bz2.BZ2File(bz2file, 'rb')
             b = open(newfilepath, 'wb')
             b.write(a.read())
@@ -1474,7 +1472,7 @@ if __name__ == "__main__":
             b.write(a.read())
             a.close()
             b.close()
-        if not os.path.exists(previouspath) :
+        if not os.path.exists(previouspath):
             a = bz2.BZ2File(bz2file, 'rb')
             b = open(previouspath, 'wb')
             b.write(a.read())
@@ -1506,14 +1504,10 @@ if __name__ == "__main__":
             # 初始场数据中也没有6小时预报
             j = hours / 6
             logger.info('j=' + str(j) + 'id=' + str(id) + 'hours=' + str(hours))
-            maxmodel = '/mnt/data/demmaxmin/dem_maxtemp' + str(
-                j) + '.model'
-            minmodel = '/mnt/data/demmaxmin/dem_mintemp' + str(
-                j) + '.model'
-            maxscalerfile = '/mnt/data/demmaxmin/dem_maxscale' + str(
-                j) + '.save'
-            minscalerfile = '/mnt/data/demmaxmin/dem_minscale' + str(
-                j) + '.save'
+            maxmodel = '/mnt/data/demmaxmin/dem_maxtemp' + str(j) + '.model'
+            minmodel = '/mnt/data/demmaxmin/dem_mintemp' + str(j) + '.model'
+            maxscalerfile = '/mnt/data/demmaxmin/dem_maxscale' + str(j) + '.save'
+            minscalerfile = '/mnt/data/demmaxmin/dem_minscale' + str(j) + '.save'
             # maxmodel = '/Users/yetao.lu/Desktop/mos/model/demmaxmin/demmax_temp0.model'
             # minmodel = '/Users/yetao.lu/Desktop/mos/model/demmaxmin/demmin_temp0.model'
             # maxscalerfile = '/Users/yetao.lu/Desktop/mos/model/demmaxmin/demscaler_max0.save'
@@ -1534,6 +1528,7 @@ if __name__ == "__main__":
         else:
             logger.info(filename+'\n'+modelname+'\n'+tempscalerfile+'\n'+rainmodelfile+'\n'+rainscalerfile+'\n'+premodelfile+'\n'+prescalerfile)
             #Predict2(hours,filename,previouspath,modelname,rainmodelfile,premodelfile,tempscalerfile,rainscalerfile,prescalerfile, origintime, endtime,outpath,csvfile,demcsv)
+            #这里用apply_async
             pool.apply_async(Predict2, args=(hours,
             filename,previouspath, modelname, rainmodelfile, premodelfile,
             tempscalerfile, rainscalerfile, prescalerfile, origintime,
